@@ -12,7 +12,7 @@ def load_json(filename):
 
 
 def create_char():
-    characters = load_json('marvel-heroes.json')
+    characters = load_json('books.json')
 
     for c in characters['Books']:
         title = oneBook['title']
