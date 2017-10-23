@@ -7,12 +7,28 @@
   <!--<link rel="stylesheet" type="text/css" href="static/css/index.css">-->
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
       rel="stylesheet">
+      <!-- javascript to sort a table -->
+      <script src="static/js/sorttable.js"></script>
 	</head>
 
 	<body>
 		<h1>List of Authors</h1>
 		<hr/>
 		<a href={{ url_for('splash') }}>Go Back to Splash</a><br/>
+		<table class="sortable">
+		<thead>
+		  <tr><th>Name</th><th>Birthday</th><th>Education</th><th>Nationality</th><th>Description</th><th>Alma Mater</th></tr>
+		</thead>
+		<tbody>
+		  <tr><td><a href = {{ url_for('jkrowling') }}>J. K. Rowling</a></td><td>1965-07-31</td><td>Bachelor of Arts</td><td>British</td><td>Joanne \"Jo\" Rowling, OBE, FRSL, pen names J. K. Rowling and Robert Galbraith, is a British novelist, screenwriter and film producer best known as the author of the Harry Potter fantasy series. </td><td>University of Exeter</td></tr>
+		  <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		  <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		</tbody>
+		<tfoot>
+		<!-- example of calculating totals from a table-->
+		<!--<tr><td>TOTAL</td><td>£45,000</td></tr-->
+		</tfoot>
+		</table>
 		<p><a href = {{ url_for('jkrowling') }}>J. K. Rowling</a><br/></p>
 		<p>author 2</p>
 		<p>author 3</p>
