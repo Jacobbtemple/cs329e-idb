@@ -5,30 +5,31 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:test123@localhost/tutorialdb'
 db = SQLAlchemy(app)
 
-class Heroes(db.Model):
-    __tablename__ = 'heroes'
-    name = db.Column(db.String(80), nullable=False)
-    id = db.Column(db.Integer, primary_key=True)
-    details = db.Column(db.String(120), nullable=False)
-    wiki = db.Column(db.String(120), nullable=False)
-    #series = db.Column()
+class Books(db.Model):
+    __tablename__ = 'books'
+    title = db.Column(db.String(80), nullable=False)
+    googleID = db.Column(db.Integer, primary_key=True)
+    isbn = db.Column(db.String(120), nullable=False)
+    publicationDate = db.Column(db.String(120), nullable=False)
+    author = db.Column(db.String(80), nullable=False)
+    publisher = db.Column(db.String(80), nullable=False)
 
-class Creators(db.Model):
-    __tablename__ = 'creators'
+class Publishers(db.Model):
+    __tablename__ = 'publishers'
     name = db.Column(db.String(80), nullable=False)
-    id = db.Column(db.Integer, primary_key=True)
-    details = db.Column(db.String(120), nullable=False)
-    comics = db.Column(db.String(80), nullable=False)
-    #series = db.Column()
+    wikiURL = db.Column(db.String(120), nullable=False)
+    owner = db.Column(db.String(80), nullable=False)
+    imageURL = db.Column(db.String(120), nullable=False)
+    website = db.Column(db.String(120), nullable=False)
 
-class Series(db.Model):
-    __tablename__ = 'series'
+class Authors(db.Model):
+    __tablename__ = 'authors'
     name = db.Column(db.String(80), nullable=False)
-    id = db.Column(db.Integer, primary_key=True)
-    startyear = db.Column(db.Integer, primary_key=True)
-    endyear = db.Column(db.Integer, primary_key=True)
-    #creators = db.Column()
-    #characters = db.Column()
+    birthday = db.Column(db.String(80), nullable=False)
+    education = db.Column(db.String(80), nullable=False)
+    nationality = db.Column(db.String(80), nullable=False)
+    description = db.Column(db.String(120), nullable=False)
+    almaMater = db.Column(db.String(80), nullable=False)
 
 db.drop_all()
 db.create_all()

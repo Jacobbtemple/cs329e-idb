@@ -1,24 +1,26 @@
 <html>
 <head>
-	<style> 
-		body {
-			background-color: #fff8e7;
-			font-family: calibri;
-			}
+	<style>
 	</style>
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
       rel="stylesheet">
 </head>
 <body>
 	<h1 style="text-align:center;">Mario Puzo</h1>
+	<center><img src="/static/images/MarioPuzoFace.jpg"/></center>
 	<hr/>
-	<p>"born": "1920-10-15"</p>
-    <p>"name": "Mario Puzo"</p>
-    <p>"died": "1999-07-02"</p>
-    <p>"description": "Mario Gianluigi Puzo was an American author, screenwriter and journalist. He is known for his crime novels about the Mafia, most notably The Godfather, which he later co-adapted into a three-part film saga directed by Francis Ford Coppola. "</p>
-    <p>"nationality": "American (Italo-American)"</p>
-    <p>"wikipedia_url": "https://en.wikipedia.org/wiki/Mario_Puzo"</p>
-    <p>"image_url": "http://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Mario_Puzo.jpg/220px-Mario_Puzo.jpg"</p>
-    <hr/>
+	<p>Birthday: 1920-10-15</p>
+    <p>Name: Mario Puzo</p>
+    <p>Died: 1999-07-02</p>
+    <p>Description: Mario Gianluigi Puzo was an American author, screenwriter and journalist. He is known for his crime novels about the Mafia, most notably The Godfather, which he later co-adapted into a three-part film saga directed by Francis Ford Coppola.</p>
+    <p>Nationality: American (Italo-American)</p>
+    <p><a href = "https://en.wikipedia.org/wiki/Mario_Puzo">Wikipedia URL</a></p>
+    <p><a href = "http://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Mario_Puzo.jpg/220px-Mario_Puzo.jpg">Image URL</a></p>
+    <hr />
+    <h1>Links:</h1>
+    <h2>Books:</h2>
+    <p><a href = {{ url_for('thegodfather') }}>The Godfather</a></p>
+    <h2>Publishers:</h2>
+    <p><a href = {{ url_for('penguingroup') }}>Penguin Group</a></p>
 </body>
 </html>

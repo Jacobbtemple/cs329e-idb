@@ -2,24 +2,26 @@
 <html>
 <head>
 	<style> 
-		body {
-			background-color: #fff8e7;
-			font-family: calibri;
-			}
 	</style>
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
       rel="stylesheet">
 </head>
 <body>
-	<h1 style="text-align:center;">Penguin Group</h1>
+	<h1 style="text-align: center;">Penguin Group</h1>
+	<center><img src = "/static/images/PenguinGroupLogo.jpg"/></center>
 	<hr/>
-	<p>"founded": "1935"</p>
-    <p>"name": "Penguin Group"</p>
-    <p>"location": "City of Westminster, London"</p>
-    <p>"wikipedia_url": "https://en.wikipedia.org/wiki/Penguin_Group</p>
-    <p>"description": "The Penguin Group is a trade book publisher, part of Penguin Random House. It is owned by Pearson PLC, the global education and publishing company, and Bertelsmann, the German media conglomerate. </p>
-    <p>"parent company": "Penguin Random House"</p>
-    <p>"image_url": "http://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Penguin_logo.svg/150px-Penguin_logo.svg.png"</p>
-    <p>"website": "http://PenguinGroup.com"</p>
+	<p>Founded: 1935</p>
+    <p>Name: Penguin Group</p>
+    <p>Location: City of Westminster, London</p>
+    <p><a href="https://en.wikipedia.org/wiki/Penguin_Group">Wikipedia URL</a></p>
+    <p>Description: The Penguin Group is a trade book publisher, part of Penguin Random House. It is owned by Pearson PLC, the global education and publishing company, and Bertelsmann, the German media conglomerate.</p>
+    <p>Parent Company: Penguin Random House</p>
+    <p><a href = "http://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Penguin_logo.svg/150px-Penguin_logo.svg.png">Image URL</a></p>
+    <p><a href = "http://Penguin.com">Website</a></p>
     <hr/>
+    <h1>Links:</h1>
+    <h2>Books:</h2>
+    <p><a href = {{ url_for('thegodfather') }}>The Godfather</a></p>
+    <h2>Authors:</h2>
+    <p><a href = {{ url_for('mariopuzo') }}>Mario Puzo</a></p>
 </body>

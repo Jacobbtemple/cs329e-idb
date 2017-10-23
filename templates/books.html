@@ -20,8 +20,8 @@
 		  <tr><th>Title</th><th>Google ID</th><th>ISBN</th><th>Publication Date</th><th>Author</th><th>Publisher</th></tr>
 		</thead>
 		<tbody>
-		  <tr><td><a href = {{ url_for('sorcerersstone') }}>Harry Potter and the Sorcerer's Stone</a></td><td>wrOQLV6xB-wC</td><td>9781781100486</td><td>2015-12-08</td><td>J. K. Rowling</td><td>Pottermore</td></tr>
-		  <tr><td>Book 2</td><td></td><td></td><td></td><td></td><td></td></tr>
+		  <tr><td><a href = {{ url_for('sorcerersstone') }}>Harry Potter and the Sorcerer's Stone</a></td><td>wrOQLV6xB-wC</td><td>9781781100486</td><td>2015-12-08</td><td><a href = {{ url_for('jkrowling') }}>J. K. Rowling</a></td><td><a href = {{ url_for('pottermore') }}>Pottermore</a></td></tr>
+		  <tr><td><a href = {{url_for('thegodfather')}}>The Godfather</a></td><td>WHalw9A5h_cC</td><td>9781101043110</td><td>2005-10-04</td><td><a href = {{ url_for('mariopuzo') }}>Mario Puzo</a></td><td><a href = {{ url_for('penguingroup') }}>Penguin Group</a></td></tr>
 		  <tr><td>Book 3</td><td></td><td></td><td></td><td></td><td></td></tr>
 		</tbody>
 		<tfoot>
