@@ -24,13 +24,30 @@ def sorcerersstone():
 	return render_template('sorcerersstone.html')
 
 @app.route('/publishers/pottermore')
-def pottermore(): 
+def pottermore():
 	return render_template('pottermore.html')
 
 @app.route('/authors/jkrowling')
 def jkrowling():
 	return render_template('jkrowling.html')
 
+<<<<<<< HEAD
+@app.route('/authors/Heinlein')
+def heinlein():
+	return render_template('Heinlein.html')
+
+@app.route('/books/Stranger')
+def stranger():
+	return render_template('Stranger.html')\
+
+@app.route('/authors/Heinlein')
+def heinlein():
+	return render_template('Heinlein.html')
+
+@app.route('/publishers/Putnam')
+def putnam():
+	return render_template('Putnam.html')
+=======
 @app.route('/books/thegodfather')
 def thegodfather():
 	return render_template('TheGodfather.html')
@@ -43,6 +60,7 @@ def penguingroup():
 def mariopuzo():
 	return render_template('MarioPuzo.html')
 
+>>>>>>> 37c76ee72302a4bfaedfa0d6f7dd7d305c48c61e
 if __name__ == '__main__':
     # This is used when running locally. Gunicorn is used to run the
     # application on Google App Engine. See entrypoint in app.yaml.
