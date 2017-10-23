@@ -31,6 +31,18 @@ def pottermore():
 def jkrowling():
 	return render_template('jkrowling.html')
 
+@app.route('/books/thegodfather')
+def thegodfather():
+	return render_template('TheGodfather.html')
+
+@app.route('/publishers/penguingroup')
+def penguingroup(): 
+	return render_template('PenguinGroup.html')
+
+@app.route('/authors/mariopuzo')
+def mariopuzo():
+	return render_template('MarioPuzo.html')
+
 if __name__ == '__main__':
     # This is used when running locally. Gunicorn is used to run the
     # application on Google App Engine. See entrypoint in app.yaml.
