@@ -15,6 +15,20 @@
 		<h1>List of Publishers</h1>
 		<hr/>
 		<a href={{ url_for('splash') }}>Go Back to Splash</a><br/>
+		<table class="sortable">
+		<thead>
+		  <tr><th>Name</th><th>Wikipedia URL</th><th>Description</th><th>Owner</th><th>image_url</th><th>website</th></tr>
+		</thead>
+		<tbody>
+		  <tr><td><a href = {{ url_for('pottermore') }}>Pottermore</a></td><td>https://en.wikipedia.org/wiki/Pottermore</td><td>Pottermore is the digital publishing, e-commerce, entertainment, and news company from J.K. Rowling and is the global digital publisher of Harry Potter and J.K. Rowling's Wizarding World.</td><td>J. K. Rowling</td><td>http://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Pottermore.png/225px-Pottermore.png</td><td>http://www.pottermore.com\nshop.pottermore.com</td></tr>
+		  <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		  <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		</tbody>
+		<tfoot>
+		<!-- example of calculating totals from a table-->
+		<!--<tr><td>TOTAL</td><td>£45,000</td></tr-->
+		</tfoot>
+		</table>
 		<p><a href = {{ url_for('pottermore') }}>Pottermore</a><br/></p>
 		<p>publisher 2</p>
 		<p>publisher 3</p>
