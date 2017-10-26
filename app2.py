@@ -24,12 +24,24 @@ def sorcerersstone():
 	return render_template('sorcerersstone.html')
 
 @app.route('/publishers/pottermore')
-def pottermore(): 
+def pottermore():
 	return render_template('pottermore.html')
 
 @app.route('/authors/jkrowling')
 def jkrowling():
 	return render_template('jkrowling.html')
+
+@app.route('/authors/Heinlein')
+def heinlein():
+	return render_template('Heinlein.html')
+
+@app.route('/books/Stranger')
+def stranger():
+	return render_template('Stranger.html')
+
+@app.route('/publishers/Putnam')
+def putnam():
+	return render_template('Putnam.html')
 
 @app.route('/books/thegodfather')
 def thegodfather():
