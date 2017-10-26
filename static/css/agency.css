@@ -8,7 +8,9 @@ body {
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 p {
-  line-height: 1.75; }
+  line-height: 1.75;
+  overflow-x: hidden;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 a {
   color: #fed136; }
@@ -25,7 +27,11 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #FFFF33;
+  color: #333300;
+  text-align: right;
+  border: 3px groove #FFFF33}
 
 section {
   padding: 100px 0; }

@@ -5,24 +5,27 @@
 	<head>
 		<title>Books</title>
   <!--<link rel="stylesheet" type="text/css" href="static/css/index.css">-->
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
-      rel="stylesheet">
+  <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" -->
+      <!-- rel="stylesheet"> -->
 
-      <link rel="stylesheet" type="text/css" href="../static/css/agency.min.css" >
+      <link rel="stylesheet" type="text/css" href="../static/css/Bootstrap2/css/bootstrap.css">
+
       <!-- javascript to sort a table -->
       <script src="static/js/sorttable.js"></script>
 	</head>
 
 	<body>
-		<h1>List of Books</h1>
-		<hr/>
-		<a href={{ url_for('splash') }}>Go Back to Splash</a><br/>
-		<table class="sortable">
+    <div>
+  		<h1>List of Books</h1>
+  		<hr/>
+  		<button class="btn-default"><a href={{ url_for('splash') }}>Go Back to Splash</a><br/></button>
+    </div>
+		<table class="sortable table-bordered">
 		<thead>
 		  <tr><th>Title</th><th>Google ID</th><th>ISBN</th><th>Publication Date</th><th>Author</th><th>Publisher</th></tr>
 		</thead>
 		<tbody>
-		  <tr><td><a href = {{ url_for('sorcerersstone') }}>Harry Potter and the Sorcerer's Stone</a></td><td>wrOQLV6xB-wC</td><td>9781781100486</td><td>2015-12-08</td><td><a href = {{ url_for('jkrowling') }}>J. K. Rowling</a></td><td><a href = {{ url_for('pottermore') }}>Pottermore</a></td></tr>
+		  <tr><td><a href = {{url_for('sorcerersstone') }}>Harry Potter and the Sorcerer's Stone</a></td><td>wrOQLV6xB-wC</td><td>9781781100486</td><td>2015-12-08</td><td><a href = {{ url_for('jkrowling') }}>J. K. Rowling</a></td><td><a href = {{ url_for('pottermore') }}>Pottermore</a></td></tr>
 		  <tr><td><a href = {{url_for('thegodfather')}}>The Godfather</a></td><td>WHalw9A5h_cC</td><td>9781101043110</td><td>2005-10-04</td><td><a href = {{ url_for('mariopuzo') }}>Mario Puzo</a></td><td><a href = {{ url_for('penguingroup') }}>Penguin Group</a></td></tr>
 		  <tr><td><a href = {{url_for('stranger')}}>Stranger in A Strange Land</a></td><td>Kn1bNU91sAoC</td><td>978-0-441-79034-0</td><td>1960-06-01</td><td><a href = {{ url_for('heinlein')}}>Robert A. Heinlein</a></td><td><a href = {{ url_for('putnam') }}></a></td>C.G. Putnam's Sons</tr>
 		</tbody>
