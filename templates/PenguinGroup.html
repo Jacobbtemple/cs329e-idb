@@ -1,28 +1,47 @@
 
 <html>
 <head>
+    <title>Publishers</title>
 	<style>
 	</style>
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
-      rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../static/css/agency.min.css" >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" type="text/css" href="/static/css/bootstrap_min.css" >
+
+          <style>
+      .container{float:center;}
+      .info{float:left;display:block;width:50% }
+      .links{float:right;display:block:width:50%;}  
+  </style>
 </head>
 <body>
-	<h1 style="text-align: center;">Penguin Group</h1>
-	<center><img src = "/static/images/PenguinGroupLogo.jpg"/></center>
-	<hr/>
-	<p>Founded: 1935</p>
-    <p>Name: Penguin Group</p>
-    <p>Location: City of Westminster, London</p>
-    <p><a href="https://en.wikipedia.org/wiki/Penguin_Group">Wikipedia URL</a></p>
-    <p>Description: The Penguin Group is a trade book publisher, part of Penguin Random House. It is owned by Pearson PLC, the global education and publishing company, and Bertelsmann, the German media conglomerate.</p>
-    <p>Parent Company: Penguin Random House</p>
-    <p><a href = "http://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Penguin_logo.svg/150px-Penguin_logo.svg.png">Image URL</a></p>
-    <p><a href = "http://Penguin.com">Website</a></p>
-    <hr/>
+    <div class="jumbotron text-center">
+	<h1>Penguin Group</h1>
+	<div class = "cover"><img src = "/static/images/PenguinGroupLogo.jpg"/>
+    </div>
+    </div>
+
+    <div class = "container">
+    <div class = "info">
+    <h2>Information:</h2>
+	<p><b>Founded:</b> 1935</p>
+    <p><b>Name:</b> Penguin Group</p>
+    <p><b>Location:</b> City of Westminster, London</p>
+    <p><a href="https://en.wikipedia.org/wiki/Penguin_Group"><b>Wikipedia URL</b></a></p>
+    <p><b>Description:</b> The Penguin Group is a trade book publisher, part of Penguin Random House. It is owned by Pearson PLC, the global education and publishing company, and Bertelsmann, the German media conglomerate.</p>
+    <p><b>Parent Company:</b> Penguin Random House</p>
+    <p><a href = "http://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Penguin_logo.svg/150px-Penguin_logo.svg.png"><b>Image URL</b></a></p>
+    <p><a href = "http://Penguin.com"><b>Website</b></a></p>
+    </div>
+
+    <div class "links">
     <h1>Links:</h1>
     <h2>Books:</h2>
     <p><a href = {{ url_for('thegodfather') }}>The Godfather</a></p>
     <h2>Authors:</h2>
     <p><a href = {{ url_for('mariopuzo') }}>Mario Puzo</a></p>
+    </div>
+    </div>
+  <a href={{ url_for('publishers') }}>Go Back to Publishers</a><br/> 
 </body>
+</html>

@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=C:\Users\Christina\cs329e-idb\venv"
+set "VIRTUAL_ENV=C:\users\kuramine\documents\github\cs329e-idb\venv"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

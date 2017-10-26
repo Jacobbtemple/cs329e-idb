@@ -7,21 +7,162 @@
 
 <head>
 
-
 	<title>Notice Me Fraij!</title>
 	<!-- css -->
   <!--<link rel="stylesheet" type="text/css" href="static/css/index.css">-->
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
-      rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../static/css/agency.min.css" >
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap_min.css" >
 
+  <!-- style tag used before css -->
+  <style>
+    /*.container{float:center;}
+    .info{float:left;display:block;width:50% }
+    .links{float:right;display:block:width:50%;}*/
+  </style>
 
 </head>
 
-
-
-
 <body>
+
+  <div class="jumbotron text-center">
+  	<h1 class="h1">&nbspProject 3</h1>
+      <img src="static/images/splash_books.jpg" class="img-fluid">
+  </div>
+
+  <div id="purpose">
+  	<hr />
+  	 <h2>&nbspPurpose of this site</h2>
+  	  <p>&nbspThis site contains information about books, authors, and publishers.</p>
+  	<hr />
+  </div>
+
+  <div id="pillars">
+  	<h2>&nbspPillars</h2>
+  	  <a href={{ url_for('books') }}><p>&nbspBooks</p></a><br/>
+  	  <a href={{ url_for('publishers') }}><p>&nbspPublishers</p></a><br/>
+  	  <a href={{ url_for('authors') }}><p>&nbspAuthors</p></a><br/>
+  </div>
+
+  <div id="purpose" class="container">
+
+  	<hr />
+  	<h3>Our Team:</h3>
+    <ul>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="static/images/Christina_Hoang.jpg" alt="">
+          <h4>Christina Hoang</h4>
+          <!-- <p class="text-muted">Lead Marketer</p> -->
+          <ul class="list-inline">
+            <li>
+              3rd year Chemical Engineering Major from Houston, Texas
+            </li>
+            <li>
+              Major responsibilities:
+            </li>
+            <li>
+              Number of commits: 7
+            </li>
+            <li>
+              Number of issues: 10
+            </li>
+            <li>
+              Number of unit test: N/A
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <div class="col-sm-4 col-xs-4">
+        	<h4>&nbsp<li>Christina Hoang</li></h4>
+        	<img src="static/images/Christina_Hoang.jpg" width="150" height="150">
+        	<ul>
+        	<li><strong>3rd year Chemical Engineering Major from Houston, Texas</strong></li>
+        	<li><strong>major responsibilities: </strong></li>
+        	<li><strong>number of commits: 7</strong></li>
+        	<li><strong>number of issues: 10</strong></li>
+        	<li><strong>number of unit test: N/A</strong></li>
+      	</ul>
+      </div>
+
+      <div class="col-sm-4 col-xs-4">
+      	<h4>&nbsp<li>Jeff Hou</li></h4>
+      	<img src="static/images/Jeff_Hou.jpg" width="150" height="150">
+      	<ul>
+      	<li><strong>4th year Mechanical Engineering Major from Houston, Texas</strong></li>
+      	<li><strong>major responsibilities: </strong></li>
+      	<li><strong>number of commits: 11</strong></li>
+      	<li><strong>number of issues: 0</strong></li>
+      	<li><strong>number of unit test: N/A</strong></li>
+      	</ul>
+      </div>
+
+      <div class="col-sm-4 col-xs-4">
+      	<h4>&nbsp<li>Shayaan Jagtap</li></h4>
+      	<img src="static/images/Shayaan_Jagtap.jpg" width="150" height="150">
+      	<ul>
+      	<li><strong>4th year Science and Technology Management Major from Austin, Texas</strong></li>
+      	<li><strong>major responsibilities: </strong></li>
+      	<li><strong>number of commits</strong></li>
+      	<li><strong>number of issues: 0</strong></li>
+      	<li><strong>number of unit test: N/A</strong></li>
+      	</ul>
+      </div>
+
+      <div class="col-sm-4 col-xs-4">
+      	<h4>&nbsp<li>Jacob Temple</li></h4>
+      	<img src="static/images/Jacob_Temple.jpg" width="150" height="150">
+      	<ul>
+      	<li><strong>4th year Mathematics major from Dickinson, Texas</strong></li>
+      	<li><strong>major responsibilities: </strong></li>
+      	<li><strong>number of commits</strong></li>
+      	<li><strong>number of issues: 0</strong></li>
+      	<li><strong>number of unit test: N/A</strong></li>
+      	</ul>
+      </div>
+
+      <div class="col-sm-4 col-xs-4">
+      	<h4>&nbsp<li>Jacob Vanderlinden</li></h4>
+      	<img src="static/images/Jacob_Vanderlinden.jpg" width="150" height="150">
+      	<ul>
+      	<li><strong>4th year Mathematics Major from El Paso, Texas</strong></li>
+      	<li><strong>major responsibilities: </strong></li>
+      	<li><strong>number of commits: </strong></li>
+      	<li><strong>number of issues: 0</strong></li>
+      	<li><strong>number of unit test: N/A</strong></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-4 col-xs-4">
+      	<h4>&nbsp<li>William Walker</li></h4>
+      	<img src="static/images/William_Walker.jpg" width="150" height="150">
+      	<ul>
+      	<li><strong>3rd year Mathematics Major from Scottsdale, Arizona</strong></li>
+      	<li><strong>major responsibilities: </strong></li>
+      	<li><strong>number of commits: 7</strong></li>
+      	<li><strong>number of issues: 1</strong></li>
+      	<li><strong>number of unit test: N/A</strong></li>
+      	</ul>
+      </div> -->
+
+      </ul>
+    </div>
+  </div>
+
+	<h3>&nbsp<u>Stats:</u></h3>
+
+	<ul>
+	<h4><li>Total number of commits: 33</li></h4>
+	<h4><li>Total number of issues: 11</li></h4>
+	<h4><li>Total number of unit tests: N/A</li></h4>
+	<a href="https://github.com/Jacobbtemple/cs329e-idb/issues"><li>GitHub Issue Tracker</li></a>
+	<a href="https://github.com/Jacobbtemple/cs329e-idb"><li>GitHub Repo</li></a>
+	<a href="https://github.com/Jacobbtemple/cs329e-idb/wiki"><li>GitHub Wiki</li></a>
+	</ul>
+</body>
 
 
   <nav class="navbar-default">
