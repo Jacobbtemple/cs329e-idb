@@ -4334,7 +4334,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
-    float: none;
+    float: left;
     width: auto;
     margin-top: 0;
     background-color: transparent;
@@ -4977,7 +4977,7 @@ a.badge:focus {
 .jumbotron > hr {
   border-top-color: #d5d5d5;
 }
-.container .jumbotron,
+.container .,
 .container-fluid .jumbotron {
   padding-right: 15px;
   padding-left: 15px;

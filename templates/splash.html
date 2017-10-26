@@ -2,105 +2,176 @@
    "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
+
+
+
 <head>
+
+
 	<title>Notice Me Fraij!</title>
 	<!-- css -->
   <!--<link rel="stylesheet" type="text/css" href="static/css/index.css">-->
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
       rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../static/css/agency.min.css" >
+
+
 </head>
+
+
+
+
 <body>
-	<h1 class="firsth1">&nbspProject 3</h1>
-	<hr />
-	<img src="static/images/splash_books.jpg">
 
-	<hr />
-	<h2>&nbspPurpose of this site</h2>
-	<p>&nbspThis site contains information about characters, books, and authors</p>
-	<hr />
 
-	<h2>&nbspPillars</h2>
-	<a href={{ url_for('books') }}><p>&nbspBooks</p></a><br/>
-	<a href={{ url_for('publishers') }}><p>&nbspPublishers</p></a><br/>
-	<a href={{ url_for('authors') }}><p>&nbspAuthors</p></a><br/>
+  <nav class="navbar-default">
+    <a class="navbar-nav" href="#home">Home</a></li>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+     <div class="navbar-nav">
+     <li class="nav-item">
+       <a class="btn btn-outline btn-xl js-scroll-trigger" href="Stats">Stats</a>
+     </li>
+       <a class="nav-item nav-link active" href="#Stats">Stats</a></li>
+  </nav>
 
-	<hr />
-	<h2>&nbspThis is our group name</h2>
-	<h3>&nbsp<u>Our Team:</u></h3>
+  <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Stats">Stats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
 
-	<ul>
-	<h4>&nbsp<li>Christina Hoang</li></h4>
-	<img src="static/images/Christina_Hoang.jpg" width="150" height="150">
-	<ul>
-	<li><strong>3rd year Chemical Engineering Major from Houston, Texas</strong></li>
-	<li><strong>major responsibilities: </strong></li>
-	<li><strong>number of commits: 7</strong></li>
-	<li><strong>number of issues: 10</strong></li>
-	<li><strong>number of unit test: N/A</strong></li>
-	</ul>
 
-	<h4>&nbsp<li>Jeff Hou</li></h4>
-	<img src="static/images/Jeff_Hou.jpg" width="150" height="150">
-	<ul>
-	<li><strong>4th year Mechanical Engineering Major from Houston, Texas</strong></li>
-	<li><strong>major responsibilities: </strong></li>
-	<li><strong>number of commits: 11</strong></li>
-	<li><strong>number of issues: 0</strong></li>
-	<li><strong>number of unit test: N/A</strong></li>
-	</ul>
+  <!--
+  <nav class="navbar-default">
+    <ul>
+      <li><a class="navbar-nav" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav> -->
 
-	<h4>&nbsp<li>Shayaan Jagtap</li></h4>
-	<img src="static/images/Shayaan_Jagtap.jpg" width="150" height="150">
-	<ul>
-	<li><strong>4th year Science and Technology Management Major from Austin, Texas</strong></li>
-	<li><strong>major responsibilities: </strong></li>
-	<li><strong>number of commits</strong></li>
-	<li><strong>number of issues: 0</strong></li>
-	<li><strong>number of unit test: N/A</strong></li>
-	</ul>
 
-	<h4>&nbsp<li>Jacob Temple</li></h4>
-	<img src="static/images/Jacob_Temple.png" width="150" height="150">
-	<ul>
-	<li><strong>4th year Mathematics major from Dickinson, Texas</strong></li>
-	<li><strong>major responsibilities: </strong></li>
-	<li><strong>number of commits</strong></li>
-	<li><strong>number of issues: 0</strong></li>
-	<li><strong>number of unit test: N/A</strong></li>
-	</ul>
+  <div class="title">
+  	<h1 class="firsth1 jumbotron container-fluid ">&nbspProject 3</h1>
+  	<hr />
+  	<img src="static/images/splash_books.jpg">
+  </div>
 
-	<h4>&nbsp<li>Jacob Vanderlinden</li></h4>
-	<img src="static/images/Jacob_Vanderlinden.jpg" width="150" height="150">
-	<ul>
-	<li><strong>4th year Mathematics Major from El Paso, Texas</strong></li>
-	<li><strong>major responsibilities: </strong></li>
-	<li><strong>number of commits: </strong></li>
-	<li><strong>number of issues: 0</strong></li>
-	<li><strong>number of unit test: N/A</strong></li>
-	</ul>
 
-	<h4>&nbsp<li>William Walker</li></h4>
-	<img src="static/images/William_Walker.jpg" width="150" height="150">
-	<ul>
-	<li><strong>3rd year Mathematics Major from Scottsdale, Arizona</strong></li>
-	<li><strong>major responsibilities: </strong></li>
-	<li><strong>number of commits: 7</strong></li>
-	<li><strong>number of issues: 1</strong></li>
-	<li><strong>number of unit test: N/A</strong></li>
-	</ul>
-	</ul>
+  	<hr />
+  	<h2>&nbspPurpose of this site</h2>
+  	<p class="jumbotron">&nbspThis site contains information about characters, books, and authors</p>
+  	<hr />
 
-	<h3>&nbsp<u>Stats:</u></h3>
 
-	<ul>
-	<h4><li>Total number of commits: 33</li></h4>
-	<h4><li>Total number of issues: 11</li></h4>
-	<h4><li>Total number of unit tests: N/A</li></h4>
-	<a href="https://github.com/Jacobbtemple/cs329e-idb/issues"><li>GitHub Issue Tracker</li></a>
-	<a href="https://github.com/Jacobbtemple/cs329e-idb"><li>GitHub Repo</li></a>
-	<a href="https://github.com/Jacobbtemple/cs329e-idb/wiki"><li>GitHub Wiki</li></a>
-	</ul>
+  <div class="Pillars">
+  	<h2>&nbspPillars</h2>
+  	<a href={{ url_for('books') }}><p>&nbspBooks</p></a><br/>
+  	<a href={{ url_for('publishers') }}><p>&nbspPublishers</p></a><br/>
+  	<a href={{ url_for('authors') }}><p>&nbspAuthors</p></a><br/>
+  </div>
+
+  <div class="Team">
+  	<hr />
+  	<h2>&nbspThis is our group name</h2>
+  	<h3>&nbsp<u>Our Team:</u></h3>
+
+  	<ul>
+  	<h4>&nbsp<li>Christina Hoang</li></h4>
+  	<img src="static/images/Christina_Hoang.jpg" width="150" height="150">
+  	<ul>
+  	<li><strong>3rd year Chemical Engineering Major from Houston, Texas</strong></li>
+  	<li><strong>major responsibilities: </strong></li>
+  	<li><strong>number of commits: 7</strong></li>
+  	<li><strong>number of issues: 10</strong></li>
+  	<li><strong>number of unit test: N/A</strong></li>
+  	</ul>
+
+  	<h4>&nbsp<li>Jeff Hou</li></h4>
+  	<img src="static/images/Jeff_Hou.jpg" width="150" height="150">
+  	<ul>
+  	<li><strong>4th year Mechanical Engineering Major from Houston, Texas</strong></li>
+  	<li><strong>major responsibilities: </strong></li>
+  	<li><strong>number of commits: 11</strong></li>
+  	<li><strong>number of issues: 0</strong></li>
+  	<li><strong>number of unit test: N/A</strong></li>
+  	</ul>
+
+  	<h4>&nbsp<li>Shayaan Jagtap</li></h4>
+  	<img src="static/images/Shayaan_Jagtap.jpg" width="150" height="150">
+  	<ul>
+  	<li><strong>4th year Science and Technology Management Major from Austin, Texas</strong></li>
+  	<li><strong>major responsibilities: </strong></li>
+  	<li><strong>number of commits</strong></li>
+  	<li><strong>number of issues: 0</strong></li>
+  	<li><strong>number of unit test: N/A</strong></li>
+  	</ul>
+
+  	<h4>&nbsp<li>Jacob Temple</li></h4>
+  	<img src="static/images/Jacob_Temple.png" width="150" height="150">
+  	<ul>
+  	<li><strong>4th year Mathematics major from Dickinson, Texas</strong></li>
+  	<li><strong>major responsibilities: </strong></li>
+  	<li><strong>number of commits</strong></li>
+  	<li><strong>number of issues: 0</strong></li>
+  	<li><strong>number of unit test: N/A</strong></li>
+  	</ul>
+
+  	<h4>&nbsp<li>Jacob Vanderlinden</li></h4>
+  	<img src="static/images/Jacob_Vanderlinden.jpg" width="150" height="150">
+  	<ul>
+  	<li><strong>4th year Mathematics Major from El Paso, Texas</strong></li>
+  	<li><strong>major responsibilities: </strong></li>
+  	<li><strong>number of commits: </strong></li>
+  	<li><strong>number of issues: 0</strong></li>
+  	<li><strong>number of unit test: N/A</strong></li>
+  	</ul>
+
+  	<h4>&nbsp<li>William Walker</li></h4>
+  	<img src="static/images/William_Walker.jpg" width="150" height="150">
+  	<ul>
+  	<li><strong>3rd year Mathematics Major from Scottsdale, Arizona</strong></li>
+  	<li><strong>major responsibilities: </strong></li>
+  	<li><strong>number of commits: 7</strong></li>
+  	<li><strong>number of issues: 1</strong></li>
+  	<li><strong>number of unit test: N/A</strong></li>
+  	</ul>
+  	</ul>
+
+  </div>
+
+  <div class="Stats">
+
+    <h3>&nbsp<u>Stats:</u></h3>
+
+  	<ul>
+  	<h4><li>Total number of commits: 33</li></h4>
+  	<h4><li>Total number of issues: 11</li></h4>
+  	<h4><li>Total number of unit tests: N/A</li></h4>
+  	<a href="https://github.com/Jacobbtemple/cs329e-idb/issues"><li>GitHub Issue Tracker</li></a>
+  	<a href="https://github.com/Jacobbtemple/cs329e-idb"><li>GitHub Repo</li></a>
+  	<a href="https://github.com/Jacobbtemple/cs329e-idb/wiki"><li>GitHub Wiki</li></a>
+  	</ul>
+
+  </div>
+
 </body>
-
 </html>
