@@ -3,27 +3,40 @@
 <head>
 	<title>The Godfather</title>
 	<style>
+      .container{float:center;}
+      .info{float:left;display:block;width:50% }
+      .links{float:right;display:block:width:50%;}  
 	</style>
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
-      rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../static/css/agency.min.css" >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" type="text/css" href="/static/css/bootstrap_min.css" >
 </head>
 <body>
-	<h1 style="text-align:center;">The Godfather</h1>
-	<center><img src="/static/images/TheGodfatherCover.jpg"/></center>
-	<hr/>
+  <div class="jumbotron text-center">
+	<h1>The Godfather</h1>
+	<div class = "cover"><img src="/static/images/TheGodfatherCover.jpg"/></center></div>
+</div>
+
+<div class = "container">
+  <div class = "info">
 	<h2>Information:</h2>
-	<p>Google ID: WHalw9A5h_cC</p>
-    <p>Title: The Godfather</p>
-    <p>ISBN: 9781101043110</p>
-    <p>Publication Date: 2005-10-04</p>
-    <p><a href="https://books.google.com/books/content/images/frontcover/WHalw9A5h_cC?fife=w500">Image URL</a></p>
-    <p>Description: The epic tale of crime and betrayal that became a global phenomenon. Almost fifty years ago, a classic was born. A searing portrayal of the Mafia underworld, The Godfather introduced readers to the first family of American crime fiction, the Corleones, and their powerful legacy of tradition, blood, and honor. The seduction of power, the pitfalls of greed, and the allegiance to family\u2014these are the themes that have resonated with millions of readers around the world and made The Godfather the definitive novel of the violent subculture that, steeped in intrigue and controversy, remains indelibly etched in our collective consciousness. WITH A NEW INTRODUCTION BY ANTHONY PUZO From the Trade Paperback edition.</p>
-    <hr/>
+	<p><b>Google ID:</b> WHalw9A5h_cC</p>
+    <p><b>Title:</b> The Godfather</p>
+    <p><b>ISBN:</b> 9781101043110</p>
+    <p><b>Publication Date:</b> 2005-10-04</p>
+    <p><a href="https://books.google.com/books/content/images/frontcover/WHalw9A5h_cC?fife=w500"><b>Image URL</b></a></p>
+    <p><b>Description:</b> The epic tale of crime and betrayal that became a global phenomenon. Almost fifty years ago, a classic was born. A searing portrayal of the Mafia underworld, The Godfather introduced readers to the first family of American crime fiction, the Corleones, and their powerful legacy of tradition, blood, and honor. The seduction of power, the pitfalls of greed, and the allegiance to family\u2014these are the themes that have resonated with millions of readers around the world and made The Godfather the definitive novel of the violent subculture that, steeped in intrigue and controversy, remains indelibly etched in our collective consciousness. WITH A NEW INTRODUCTION BY ANTHONY PUZO From the Trade Paperback edition.</p>
+  </div>
+
+    <div class = "links">
     <h1>Links:</h1>
       <h2>Authors:</h2>
       <p><a href = {{ url_for('mariopuzo') }}>Mario Puzo</a></p>
       <h2>Publishers:</h2>
       <p><a href = {{ url_for('penguingroup') }}>Penguin Group</a></p>
+    </div>
+  </div>
+      <a href={{ url_for('books') }}>Go Back to Books</a><br/>
+      
 </body>
 </html>
