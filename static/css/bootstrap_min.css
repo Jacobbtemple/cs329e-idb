@@ -4503,6 +4503,10 @@ tbody.collapse.show {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
+  background-image: url(../static/images/splash_books.jpg);
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #e9ecef;
   border-radius: 0.3rem;
 }
