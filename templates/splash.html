@@ -16,81 +16,26 @@
 
   <!-- style tag used before css -->
   <style>
-    /*.container{float:center;}
-    .info{float:left;display:block;width:50% }
-    .links{float:right;display:block:width:50%;}*/
+  .parallax {
+      /* The image used */
+      background-image: url("static/images/splash_books.jpg");
+
+      /* Set a specific height */
+      height: 300px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
   </style>
 
 </head>
 
 <body>
 
-      <!-- <div class="col-sm-4 col-xs-4">
-        	<h4>&nbsp<li>Christina Hoang</li></h4>
-        	<img src="static/images/Christina_Hoang.jpg" width="150" height="150">
-        	<ul>
-        	<li><strong>3rd year Chemical Engineering Major from Houston, Texas</strong></li>
-        	<li><strong>major responsibilities: </strong></li>
-        	<li><strong>number of commits: 7</strong></li>
-        	<li><strong>number of issues: 10</strong></li>
-        	<li><strong>number of unit test: N/A</strong></li>
-      	</ul>
-      </div>
-      <div class="col-sm-4 col-xs-4">
-      	<h4>&nbsp<li>Jeff Hou</li></h4>
-      	<img src="static/images/Jeff_Hou.jpg" width="150" height="150">
-      	<ul>
-      	<li><strong>4th year Mechanical Engineering Major from Houston, Texas</strong></li>
-      	<li><strong>major responsibilities: </strong></li>
-      	<li><strong>number of commits: 11</strong></li>
-      	<li><strong>number of issues: 0</strong></li>
-      	<li><strong>number of unit test: N/A</strong></li>
-      	</ul>
-      </div>
-      <div class="col-sm-4 col-xs-4">
-      	<h4>&nbsp<li>Shayaan Jagtap</li></h4>
-      	<img src="static/images/Shayaan_Jagtap.jpg" width="150" height="150">
-      	<ul>
-      	<li><strong>4th year Science and Technology Management Major from Austin, Texas</strong></li>
-      	<li><strong>major responsibilities: </strong></li>
-      	<li><strong>number of commits</strong></li>
-      	<li><strong>number of issues: 0</strong></li>
-      	<li><strong>number of unit test: N/A</strong></li>
-      	</ul>
-      </div>
-      <div class="col-sm-4 col-xs-4">
-      	<h4>&nbsp<li>Jacob Temple</li></h4>
-      	<img src="static/images/Jacob_Temple.jpg" width="150" height="150">
-      	<ul>
-      	<li><strong>4th year Mathematics major from Dickinson, Texas</strong></li>
-      	<li><strong>major responsibilities: </strong></li>
-      	<li><strong>number of commits</strong></li>
-      	<li><strong>number of issues: 0</strong></li>
-      	<li><strong>number of unit test: N/A</strong></li>
-      	</ul>
-      </div>
-      <div class="col-sm-4 col-xs-4">
-      	<h4>&nbsp<li>Jacob Vanderlinden</li></h4>
-      	<img src="static/images/Jacob_Vanderlinden.jpg" width="150" height="150">
-      	<ul>
-      	<li><strong>4th year Mathematics Major from El Paso, Texas</strong></li>
-      	<li><strong>major responsibilities: </strong></li>
-      	<li><strong>number of commits: </strong></li>
-      	<li><strong>number of issues: 0</strong></li>
-      	<li><strong>number of unit test: N/A</strong></li>
-        </ul>
-      </div>
-      <div class="col-sm-4 col-xs-4">
-      	<h4>&nbsp<li>William Walker</li></h4>
-      	<img src="static/images/William_Walker.jpg" width="150" height="150">
-      	<ul>
-      	<li><strong>3rd year Mathematics Major from Scottsdale, Arizona</strong></li>
-      	<li><strong>major responsibilities: </strong></li>
-      	<li><strong>number of commits: 7</strong></li>
-      	<li><strong>number of issues: 1</strong></li>
-      	<li><strong>number of unit test: N/A</strong></li>
-      	</ul>
-      </div> -->
+
 
 
   <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -128,29 +73,37 @@
   </nav> -->
 
 
-  <div class="title">
-  	<h1 class="firsth1 jumbotron container-fluid ">&nbspProject 3</h1>
-  	<hr />
-  	<img src="static/images/splash_books.jpg">
+  <div id="Project" class="text-center title" style="color:DodgerBlue">
+    <br>
+    <h1 class="container-fluid text-center">&nbspBookHub</h1>
+    <br>
+  	<div class="parallax"></div>
   </div>
 
+  <div id="Purpose" class="text-center title">
+    <br>
+    <br>
+  	 <h2 style="color:tomato">&nbspPurpose of this site</h2>
+    <br>
+  	 <p class="text-center">&nbspThis site contains information about Books and their respective Authors and Publishers</p>
+    <br>
+    <hr/>
+  </div>
 
-  	<hr />
-  	<h2>&nbspPurpose of this site</h2>
-  	<p class="jumbotron">&nbspThis site contains information about characters, books, and authors</p>
-  	<hr />
-
-
-  <div class="Pillars">
-  	<h2>&nbspPillars</h2>
-  	<a href={{ url_for('books') }}><p>&nbspBooks</p></a><br/>
-  	<a href={{ url_for('publishers') }}><p>&nbspPublishers</p></a><br/>
-  	<a href={{ url_for('authors') }}><p>&nbspAuthors</p></a><br/>
+  <div id="Pillar" class="text-center">
+    <br>
+  	<h2 style="color:tomato">&nbspPillars</h2>
+    <br>
+  	   <a href={{ url_for('books') }}><p>&nbspBooks</p></a><br/>
+  	   <a href={{ url_for('publishers') }}><p>&nbspPublishers</p></a><br/>
+  	   <a href={{ url_for('authors') }}><p>&nbspAuthors</p></a><br/>
   </div>
 
   <hr/>
-  <div class="Pillars">
-    <h2>&nbspAbout</h2>
+  <br>
+  <div id="About Us" class="text-center">
+    <h2 style="color:tomato">&nbspAbout</h2>
+  <br>
     <a href={{ url_for('about') }}><p>&nbspAbout us</p></a><br/>
 </body>
 </html>
