@@ -8,16 +8,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="/static/css/bootstrap_min.css" >
+    <style>
+    #col-2{width:50%;}
+    #col-1{float:center;}
+    </style>
 
 </head>
 
-<div class="Team">
-    <hr />
-    <h2>&nbspThis is our group name</h2>
-    <h3>&nbsp<u>Our Team:</u></h3>
+<div class="container">
+    <div class="jumbotron text-center">
+    <h1>Team Notice Me Fraij!</h1>
+    <h2><u>Team Members:</u></h2>
+    </div>
 
-    <ul>
-    <h4>&nbsp<li>Christina Hoang</li></h4>
+    <div class = "row">
+    <div id="col-2">
+    <h4><li>Christina Hoang</li></h4>
     <img src="static/images/Christina_Hoang.jpg" width="150" height="150">
     <ul>
     <li><strong>3rd year Chemical Engineering Major from Houston, Texas</strong></li>
@@ -26,8 +32,10 @@
     <li><strong>number of issues: 10</strong></li>
     <li><strong>number of unit test: N/A</strong></li>
     </ul>
+    </div>
 
-    <h4>&nbsp<li>Jeff Hou</li></h4>
+    <div id ="col-2">
+    <h4><li>Jeff Hou</li></h4>
     <img src="static/images/Jeff_Hou.jpg" width="150" height="150">
     <ul>
     <li><strong>4th year Mechanical Engineering Major from Houston, Texas</strong></li>
@@ -36,8 +44,12 @@
     <li><strong>number of issues: 0</strong></li>
     <li><strong>number of unit test: N/A</strong></li>
     </ul>
+    </div>
+    </div>
 
-    <h4>&nbsp<li>Shayaan Jagtap</li></h4>
+    <div class = "row">
+    <div id = "col-2">
+    <h4><li>Shayaan Jagtap</li></h4>
     <img src="static/images/Shayaan_Jagtap.jpg" width="150" height="150">
     <ul>
     <li><strong>4th year Science and Technology Management Major from Austin, Texas</strong></li>
@@ -46,8 +58,10 @@
     <li><strong>number of issues: 0</strong></li>
     <li><strong>number of unit test: N/A</strong></li>
     </ul>
+    </div>
 
-    <h4>&nbsp<li>Jacob Temple</li></h4>
+    <div id = "col-2">
+    <h4><li>Jacob Temple</li></h4>
     <img src="static/images/Jacob_Temple.jpg" width="150" height="150">
     <ul>
     <li><strong>4th year Mathematics major from Dickinson, Texas</strong></li>
@@ -56,8 +70,12 @@
     <li><strong>number of issues: 0</strong></li>
     <li><strong>number of unit test: N/A</strong></li>
     </ul>
+    </div>
+    </div>
 
-    <h4>&nbsp<li>Jacob Vanderlinden</li></h4>
+    <div class = "row">
+    <div id = "col-2">
+    <h4><li>Jacob Vanderlinden</li></h4>
     <img src="static/images/Jacob_Vanderlinden.jpg" width="150" height="150">
     <ul>
     <li><strong>4th year Mathematics Major from El Paso, Texas</strong></li>
@@ -66,8 +84,10 @@
     <li><strong>number of issues: 0</strong></li>
     <li><strong>number of unit test: N/A</strong></li>
     </ul>
+    </div>
 
-    <h4>&nbsp<li>William Walker</li></h4>
+    <div id = "col-2">
+    <h4><li>William Walker</li></h4>
     <img src="static/images/William_Walker.jpg" width="150" height="150">
     <ul>
     <li><strong>3rd year Mathematics Major from Scottsdale, Arizona</strong></li>
@@ -77,49 +97,45 @@
     <li><strong>number of unit test: N/A</strong></li>
     </ul>
     </ul>
-    <hr />
+    </div>
+    </div>
 
   </div>
 
-  <div class="Stats">
-
-    <h3>&nbsp<u>Stats:</u></h3>
-
-    <ul>
-    <h4><li>Total number of commits: 33</li></h4>
-    <h4><li>Total number of issues: 11</li></h4>
-    <h4><li>Total number of unit tests: N/A</li></h4>
-    <a href="https://github.com/Jacobbtemple/cs329e-idb/issues"><li>GitHub Issue Tracker</li></a>
-    <a href="https://github.com/Jacobbtemple/cs329e-idb"><li>GitHub Repo</li></a>
-    <a href="https://github.com/Jacobbtemple/cs329e-idb/wiki"><li>GitHub Wiki</li></a>
-    </ul>
+  <div class="jumbotron text-center">
+    <div id="sm-1">
+    <h3><u>Stats:</u></h3>
+    <h4>Total number of commits: 33</h4>
+    <h4>Total number of issues: 11</h4>
+    <h4>Total number of unit tests: N/A</h4>
+    <a href="https://github.com/Jacobbtemple/cs329e-idb/issues">GitHub Issue Tracker</a><br />
+    <a href="https://github.com/Jacobbtemple/cs329e-idb">GitHub Repo</a><br />
+    <a href="https://github.com/Jacobbtemple/cs329e-idb/wiki">GitHub Wiki</a><br />
+    </div>
     <hr />
 
-  </div>
 
-  <div class="Data">
 
-    <h3>&nbsp<u>Data:</u></h3>
-    <ul>
-    <li><strong><a href="http:www.wikipedia.org">Wikipedia</strong></li></a></ul>
-  </div>
+    <div id="sm-1">
+    <h3><u>Data:</u></h3>
+    <a href="http:www.wikipedia.org">Wikipedia</a>
+    </div>
     <hr />
 
-  <div class="Tools">
+  <div class="sm-1">
 
-    <h3>&nbsp<u>Tools:</u></h3>
-    <ul>
-    <li><strong>Python</strong></li>
-    <li><strong>Flask</strong></li>
-    <li><strong>JavaScripts</strong></li>
-    <li><strong>Bootstrap</strong></li>
-    <li><strong>Google Cloud Platform</strong></li>
-    <li><strong>NameCheap</strong></li>
-    <li><strong>html</strong></li>
-    <li><strong>css</strong></li>
-    <li><strong>github</strong></li>
-    <li><strong>Slack</strong></li>
-    </ul>
+    <h3><u>Tools:</u></h3>
+    <strong>Python</strong><br />
+    <strong>Flask</strong><br />
+    <strong>JavaScripts</strong><br />
+    <strong>Bootstrap</strong><br />
+    <strong>Google Cloud Platform</strong><br />
+    <strong>NameCheap</strong><br />
+    <strong>html</strong><br />
+    <strong>css</strong><br />
+    <strong>github</strong><br />
+    <strong>Slack</strong><br />
+  </div>
   </div>
 
 </html>
