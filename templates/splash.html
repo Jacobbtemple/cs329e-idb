@@ -1,109 +1,76 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">
 
-<html>
+<html lang="en">
+  <head>
 
-
-
-<head>
-
-	<title>Notice Me Fraij!</title>
-	<!-- css -->
-  <!--<link rel="stylesheet" type="text/css" href="static/css/index.css">-->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap_min.css" >
-
-  <!-- style tag used before css -->
   <style>
-  .parallax {
-      /* The image used */
-      background-image: url("static/images/splash_books.jpg");
-
-      /* Set a specific height */
-      height: 300px;
-
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+  body {
+    background-image: url("static/images/books_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% top;
+    background-attachment: fixed;
+    overflow: hidden;
   }
   </style>
 
-</head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notice Me Fraij!</title>
+
+    <link href="static/Bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="static/Bootstrap/css/custom.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:100" rel="stylesheet">
+
+  </head>
 
 <body>
 
+  <nav class="navbar navbar-inverse navbar-static-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" style="color:#fff" href={{ url_for('splash') }}>BOOKHUB</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a style="color:#fff" href=/about>ABOUT</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#fff" role="button" aria-haspopup="true" aria-expanded="false">PILLARS<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+            			<li><a href={{ url_for('books') }}>Books</a></li>
+						<li><a href={{ url_for('publishers') }}>Publishers</a></li>
+						<li><a href={{ url_for('authors') }}>Authors</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
 
+<div class="jumbotron-custom" style="text-align: center">
+	<div class="container" style="color:#fff !important; font-family: 'Montserrat', sans-serif; font-size:30px">
+		<h1><b>BOOKHUB</b></h1>
+    <p>-------------------------------------</p>
+		<p>This site contains information about Books and their respective Authors and Publishers.</p>
+		<br>
+	</div>
+</div>
 
+<div class="row">
+  <div class="col-md-6"></div>
+  <div class="col-md-6"></div>
+</div>
 
-  <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fa fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#Stats">Stats</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#features">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
-
-
-  <!--
-  <nav class="navbar-default">
-    <ul>
-      <li><a class="navbar-nav" href="#home">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
-  </nav> -->
-
-
-  <div id="Project" class="title" style="color:DodgerBlue">
-    <br>
-    <h1 class="container-fluid text-center">&nbspBookHub</h1>
-    <br>
-  	<div class="parallax"></div>
-  </div>
-
-  <div id="Purpose" class="text-center title">
-    <br>
-    <br>
-  	 <h2 style="color:tomato ">&nbspPurpose of this site</h2>
-    <br>
-  	 <p class="text-center">&nbspThis site contains information about Books and their respective Authors and Publishers.</p>
-    <br>
-    <hr/>
-  </div>
-
-  <div id="Pillar" class="text-center">
-    <br>
-  	<h2 style="color:tomato">Pillars</h2>
-    <br>
-  	   <a href={{ url_for('books') }}><p>Books</p></a><br/>
-  	   <a href={{ url_for('publishers') }}><p>Publishers</p></a><br/>
-  	   <a href={{ url_for('authors') }}><p>Authors</p></a><br/>
-  </div>
-
-  <hr/>
-  <br>
-  <div id="About Us" class="text-center">
-    <h2 style="color:tomato">About</h2>
-  <br>
-    <a href={{ url_for('about') }}><p>About us</p></a><br/>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="static/Bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

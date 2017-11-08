@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <title>Authors</title>
+  <!--<link rel="stylesheet" type="text/css" href="static/css/index.css">-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap_min.css" >
+    <script src="static/js/sorttable.js"></script>
+
+  <style>
+  </style>
+  </head>
+
+  <body>
+  <div class="jumbotron text-center">
+    <h1>{{name}}</h1>
+    <div class = "cover"><img src = "{{image_url}}"></div>
+  </div>
+
+<!-- here I have a container that wraps a row. The row wraps 3 column classes. It should create 3 equal columns but doesn't work atm-->
+  <div class = "container">
+    <div class = "row">
+      <div class = "col">
+        <h2>Information: </h2>
+        <p><b>Birthday: </b>{{birthday}}</p>
+        <p><b>Name: </b>{{name}}</p>
+        <p><b>Education: </b>{{education}}</p>
+        <p><b>Nationality: </b>{{nationality}}</p>
+        <p><b>About: </b>{{description}}</p>
+        <p><a href = "{{wikipedia_url}}"><b>Wikipedia URL</b></a></p>
+        <p><a href = "{{image_url}}"><b>Image URL</b></a></p>
+      </div>
+
+      <div class = "col">
+        <table cellpadding="5px" class="sortable table-bordered text-center" style="margin: auto; style">
+        <thead>
+          <tr><th>Books by {{name}}</th></tr>
+        </thead>
+        <tbody>
+          {% for i in info %}
+            <tr>
+              <td><a href = "/books/{{i.title}}">{{i.title}}</a></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </div>
+
+      <div class = "col">
+        <table cellpadding="5px" class="sortable table-bordered text-center" style="margin: auto; style">
+        <thead>
+          <tr><th>Publishers associated with {{name}}</th></tr>
+        </thead>
+        <tbody>
+          {% for i in info %}
+            <tr>
+              <td><a href = "/books/{{i.publisher_name}}">{{i.publisher_name}}</a></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </div>
+
+    </div>
+    <a href={{ url_for('splash') }}>Go Back to Splash</a><br/>
+  </div>
+
+  </body>
+</html>
