@@ -3,6 +3,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Base, Book, engine
 from create_db import create_book, session 
+import subprocess
+import json
 
 app = Flask(__name__)
 
@@ -59,6 +61,12 @@ def book_page(title):
 #@app.route('/publishers/<publisher>')
 #def author_page(publisher):
 	#todo, test authors first
+
+@app.route('/unit_tests')
+def unit_tests():
+  output = subprocess.getoutput("python test.py")
+  return json.dumps({'output': str(output)})
+
 
 if __name__ == '__main__':
     # This is used when running locally. Gunicorn is used to run the
