@@ -25,12 +25,12 @@ Base = declarative_base()
 
 class Book(Base):
     __tablename__ = 'book'
-    google_id = Column(Integer, primary_key=True)
+    google_id = Column(String(100), primary_key=True)
     title = Column(String(100), nullable=False)
     isbn = Column(String(100), nullable=False)
     publication_date = Column(String(100), nullable=False)
     image_url = Column(String(100), nullable = False)
-    book_description = Column(String(100), nullable=False)
+    book_description = Column(String(3000), nullable=False)
     publisher_wikipedia_url = Column(String(100), nullable=False)
     publisher_name = Column(String(100), nullable=False)
     publisher_description = Column(String(100), nullable=False)
@@ -41,11 +41,11 @@ class Book(Base):
     author_name = Column(String(100), nullable=False)
     education = Column(String(100), nullable=False)
     nationality = Column(String(100), nullable=False)
-    description = Column(String(3000), nullable=False)
+    author_description = Column(String(3000), nullable=False)
     alma_mater = Column(String(100), nullable=False)
     author_wikipedia_url = Column(String(100), nullable=False)
     author_image_url = Column(String(100), nullable=False)
-    
+
 
 
 

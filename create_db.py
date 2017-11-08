@@ -59,13 +59,13 @@ def create_book():
             author_name = oneAuthor['name']
             education = oneAuthor['education']
             nationality = oneAuthor['nationality']
-            description = oneAuthor['description']
+            author_description = oneAuthor['description']
             alma_mater = oneAuthor['alma_mater']
             author_wikipedia_url = oneAuthor['wikipedia_url']
             author_image_url = oneAuthor['image_url']
 
 
-        newBook = Book(title=title, google_id=google_id)
+        newBook = Book(google_id=google_id, title=title, isbn=isbn, publication_date=publication_date, image_url=image_url,book_description=book_description, publisher_wikipedia_url=publisher_wikipedia_url,publisher_name=publisher_name, publisher_description=publisher_description, owner=owner, publisher_image_url=publisher_image_url, website=website, born=born, author_name=author_name, education=education, nationality=nationality, author_description=author_description, alma_mater=alma_mater, author_wikipedia_url=author_wikipedia_url, author_image_url=author_image_url)
         # After I create the book, I can then add it to my session.
         session.add(newBook)
         # commit the session to my DB.
