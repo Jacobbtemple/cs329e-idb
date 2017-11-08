@@ -25,7 +25,7 @@ def authors():
 
 @app.route('/authors/<name>')
 def author_page(name):
-	info = session.query(books).filter_by(authors=name)
+	info = session.query(books).filter_by(author_name=name)
 	birthday = info.birthday.first() #Depends on table call name
 	education = info.education.first() #Depends on table call name
 	nationality = info.nationality.first() #Depends on table call name
