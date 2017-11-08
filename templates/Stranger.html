@@ -1,24 +1,43 @@
 <html>
 <head>
+	<title>Stranger</title>
 	<style>
-		body {
-			background-color: #fff8e7;
-			font-family: calibri;
-			}
+      .container{float:center;}
+      .info{float:left;display:block;width:50% }
+      .links{float:right;display:block:width:50%;}
 	</style>
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
-      rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" type="text/css" href="/static/css/bootstrap_min.css" >
 </head>
 <body>
-	<h1 style="text-align:center;">Stranger in a Strange Land</h1>
-	<hr/>
-	<center><img src="/static/images/Stranger.jpg"></center>
-	<p>"google_id": "Kn1bNU91sAoC"</p>
-    <p>"title": "Stranger in a Strange Land"</p>
-    <p>"isbn": "978-0-441-79034-0"</p>
-    <p>"publication_date": "2005-10-04"</p>
-    <p>"image_url": "https://books.google.com/books/content?id=Kn1bNU91sAoC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70VZT4FXPjLSwUHsdUtw_z85f52I0nRjs4VOqGvcJ1YCLyqk317qn3zTVTIT7KDAQ5pWTZPitNg60rJbyhZMiXIN5FgZ8TmNmajdbh-SuMxs0nmHd2LAOtn2IGZ-ShIPgfqWleI"</p>
-    <p>"description": "Stranger in a Strange Land is a 1961 science fiction novel by American author Robert A. Heinlein. It tells the story of Valentine Michael Smith, a human who comes to Earth in early adulthood after being born on the planet Mars and raised by Martians. The novel explores his interaction with—and eventual transformation of—Terran culture. In 2012, the US Library of Congress named it one of 88 "Books that Shaped America"."</p>
-    <hr/>
+    <div class="jumbotron text-center">
+	<h1>Stranger in a Strange Land</h1>
+	<div class = "cover"><img src="/static/images/Stranger.jpg"></center>
+	</div>
+	</div>
+
+
+	<div class = "container">
+    <div class = "info">
+    <h2>Information:</h2>
+	<p><b>Google ID:</b> Kn1bNU91sAoC</p>
+    <p><b>Title:</b> Stranger in a Strange Land</p>
+    <p><b>ISBN:</b> 978-0-441-79034-0</p>
+    <p><b>Publication Date:</b> 1961-06-01</p>
+    <p><a href = "https://books.google.com/books/content?id=Kn1bNU91sAoC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70VZT4FXPjLSwUHsdUtw_z85f52I0nRjs4VOqGvcJ1YCLyqk317qn3zTVTIT7KDAQ5pWTZPitNg60rJbyhZMiXIN5FgZ8TmNmajdbh-SuMxs0nmHd2LAOtn2IGZ-ShIPgfqWleI"></a><b>Image URL</b></p>
+    <p><b>Description:</b> Stranger in a Strange Land is a 1961 science fiction novel by American author Robert A. Heinlein. It tells the story of Valentine Michael Smith, a human who comes to Earth in early adulthood after being born on the planet Mars and raised by Martians. The novel explores his interaction with—and eventual transformation of—Terran culture. In 2012, the US Library of Congress named it one of 88 "Books that Shaped America".</p>
+	</div>
+
+	<div class = "links">
+	<h1>Links:</h1>
+      <h2>Authors:</h2>
+      <p><a href = {{ url_for('heinlein') }}>Robert A. Heinlein</a></p>
+      <h2>Publishers:</h2>
+      <p><a href = {{ url_for('putnam') }}>C.G. Putnam's Sons</a></p>
+     </div>
+ </div>
+      <a href={{ url_for('books') }}>Go Back to Books</a><br/>
+
 </body>
 </html>

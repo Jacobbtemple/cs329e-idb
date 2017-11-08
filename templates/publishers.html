@@ -2,32 +2,51 @@
    "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
-	<head>
-		<title>Publishers</title>
-  <!--<link rel="stylesheet" type="text/css" href="static/css/index.css">-->
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
-      rel="stylesheet">
-      <!-- javascript to sort a table -->
-      <script src="static/js/sorttable.js"></script>
-	</head>
 
-	<body>
-		<h1>List of Publishers</h1>
+<head>
+
+	<title>Publishers</title>
+  <link rel="stylesheet" type="text/css" href="../static/css/bootstrap_min.css" >
+  <!-- javascript to sort a table -->
+  <script src="static/js/sorttable.js"></script>
+
+
+</head>
+
+
+
+
+
+<body>
+
+    <div id="title" class="text-center title" style="color:DodgerBlue">
+      <br>
+      <h1 class="text-center">List of Publishers</h1>
+    </div>
 		<hr/>
-		<a href={{ url_for('splash') }}>Go Back to Splash</a><br/>
-		<table class="sortable">
-		<thead>
-		  <tr><th>Name</th><th>Wikipedia URL</th><th>Description</th><th>Owner</th><th>Image URL</th><th>Website</th></tr>
-		</thead>
-		<tbody>
-		  <tr><td><a href = {{ url_for('pottermore') }}>Pottermore</a></td><td><a href = "https://en.wikipedia.org/wiki/Pottermore">Pottermore Wiki</td><td>Pottermore is the digital publishing, e-commerce, entertainment, and news company from J.K. Rowling and is the global digital publisher of Harry Potter and J.K. Rowling's Wizarding World.</td><td>J. K. Rowling</td><td><a href = "http://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Pottermore.png/225px-Pottermore.png">Pottermore.png</td><td><a href = "http://www.pottermore.com">Pottermore.com</td></tr>
-		  <tr><td><a href = {{ url_for('penguingroup') }}>Penguin Group</a></td><td><a href="https://en.wikipedia.org/wiki/Penguin_Group">Penguin Group Wiki</a></td><td>The Penguin Group is a trade book publisher, part of Penguin Random House. It is owned by Pearson PLC, the global education and publishing company, and Bertelsmann, the German media conglomerate.</td><td>Penguin Random House</td><td><a href = "http://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Penguin_logo.svg/150px-Penguin_logo.svg.png">Penguin_Logo.png</a></td><td><a href = "http://Penguin.com">Penguin.com</a></td></tr>
-		  <tr><td>Publisher 3</td><td></td><td></td><td></td><td></td><td></td></tr>
-		</tbody>
-		<tfoot>
-		<!-- example of calculating totals from a table-->
-		<!--<tr><td>TOTAL</td><td>£45,000</td></tr-->
-		</tfoot>
-		</table>
+
+    <div class="text-center">
+      <button class="btn-default"><a href={{ url_for('splash') }}>Go Back to Splash</a><br/></button>
+    </div>
+
+    <div class="text_center">
+    <br>
+		<table cellpadding="5px" class="sortable table-bordered text-center" style="margin: auto;">
+  		<thead>
+  		  <tr><th>Name</th><th>Wikipedia URL</th><th>Description</th><th>Owner</th><th>Image URL</th><th>Website</th></tr>
+  		</thead>
+  		<tbody>
+  		  <tr><td><a href = {{ url_for('pottermore') }}>Pottermore</a></td><td><a href = "https://en.wikipedia.org/wiki/Pottermore">Pottermore Wiki</td><td>Pottermore is the digital publishing, e-commerce, entertainment, and news company from J.K. Rowling and is the global digital publisher of Harry Potter and J.K. Rowling's Wizarding World.</td><td>J. K. Rowling</td><td><a href = "http://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Pottermore.png/225px-Pottermore.png">Pottermore.png</td><td><a href = "http://www.pottermore.com">Pottermore.com</td></tr>
+  		  <tr><td><a href = {{ url_for('penguingroup') }}>Penguin Group</a></td><td><a href="https://en.wikipedia.org/wiki/Penguin_Group">Penguin Group Wiki</a></td><td>The Penguin Group is a trade book publisher, part of Penguin Random House. It is owned by Pearson PLC, the global education and publishing company, and Bertelsmann, the German media conglomerate.</td><td>Penguin Random House</td><td><a href = "http://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Penguin_logo.svg/150px-Penguin_logo.svg.png">Penguin_Logo.png</a></td><td><a href = "http://Penguin.com">Penguin.com</a></td></tr>
+  		  <tr><td><a href = {{ url_for('putnam') }}>C. G. Putnam's Sons</a></td><td><a href = "https://en.wikipedia.org/wiki/G._P._Putnam%27s_Sons">Putnam's Wiki</td><td>G. P. Putnam's Sons is an American book publisher based in New York City, New York. Since 1996, it has been an imprint of the Penguin Group.</td><td>Penguin Random House</td><td><a href = "https://upload.wikimedia.org/wikipedia/commons/3/3e/Putnam_Logo.png">Putnam_logo.png</a></td><td><a href = "http://Penguin.com">Penguin.com</a></td></tr>
+  		</tbody>
+  		<tfoot>
+  		<!-- example of calculating totals from a table-->
+  		<!--<tr><td>TOTAL</td><td>£45,000</td></tr-->
+  		</tfoot>
+  		</table>
+
+
+
 	</body>
 </html>

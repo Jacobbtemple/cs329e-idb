@@ -5,28 +5,50 @@
 	<head>
 		<title>Authors</title>
   <!--<link rel="stylesheet" type="text/css" href="static/css/index.css">-->
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
-      rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap_min.css" >
+
+
+	<style>
+	  .container{float:center;}
+	  .info{float:left;display:block;width:50% }
+	  .links{float:right;display:block:width:50%;}  
+	</style>
 	</head>
 
 	<body>
+	<div class="jumbotron text-center">
 		<h1>J. K. Rowling</h1>
-		<img src = "/static/images/J._K._Rowling_2010.jpg">
-		<hr />
+
+		<div class = "cover"><img src = "/static/images/J._K._Rowling_2010.jpg"></div>
+  </div>
+
+
+	<div class = "container">
+	<div class = "info">
+
+    <a href={{ url_for('splash') }}>Go Back to Splash</a><br/>
+
 		<h2>Information:</h2>
-      <p>Birthday: 1965-07-31</p>
-      <p>Name: J. K. Rowling</p>
-      <p>Education: Bachelor of Arts</p>
-      <p>Nationality: British</p>
-      <p>About: Joanne "Jo" Rowling, OBE, FRSL, pen names J. K. Rowling and Robert Galbraith, is a British novelist, screenwriter and film producer best known as the author of the Harry Potter fantasy series.</p>
-      <p>Alma Mater: University of Exeter</p>
-      <p><a href = "https://en.wikipedia.org/wiki/J._K._Rowling">Wikipedia URL</a></p>
-      <p><a href = "http://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/J._K._Rowling_2010.jpg/220px-J._K._Rowling_2010.jpg">Image URL</a></p>
-       	<hr />
-      <h1>Links:</h1>
-      <h2>Books:</h2>
-      <p><a href = {{ url_for('sorcerersstone') }}>Harry Potter and the Sorcerer's Stone</a></p>
-      <h2>Publishers:</h2>
-      <p><a href = {{ url_for('pottermore') }}>Pottermore</a></p> 
- 	</body>
+	  <p><b>Birthday:</b> 1965-07-31</p>
+	  <p><b>Name:</b> J. K. Rowling</p>
+	  <p><b>Education:</b> Bachelor of Arts</p>
+	  <p><b>Nationality:</b> British</p>
+	  <p><b>About:</b> Joanne "Jo" Rowling, OBE, FRSL, pen names J. K. Rowling and Robert Galbraith, is a British novelist, screenwriter and film producer best known as the author of the Harry Potter fantasy series.</p>
+	  <p><b>Alma Mater:</b> University of Exeter</p>
+	  <p><a href = "https://en.wikipedia.org/wiki/J._K._Rowling"><b>Wikipedia URL</b></a></p>
+	  <p><a href = "http://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/J._K._Rowling_2010.jpg/220px-J._K._Rowling_2010.jpg"><b>Image URL</b></a></p>
+	</div>
+
+	<div class = "links">
+	  <h1>Links:</h1>
+	  <h2>Books:</h2>
+	  <p><a href = {{ url_for('sorcerersstone') }}>Harry Potter and the Sorcerer's Stone</a></p>
+	  <h2>Publishers:</h2>
+	  <p><a href = {{ url_for('pottermore') }}>Pottermore</a></p>
+	</div>
+  </div>
+  		<a href={{ url_for('authors') }}>Go Back to Authors</a><br/>
+	</body>
 </html>

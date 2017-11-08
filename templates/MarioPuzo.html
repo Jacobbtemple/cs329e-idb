@@ -1,26 +1,48 @@
 <html>
 <head>
+    <title>Authors</title>
 	<style>
+        .container{float:center;}
+      .info{float:left;display:block;width:50% }
+      .links{float:right;display:block:width:50%;} 
 	</style>
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
-      rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" type="text/css" href="/static/css/bootstrap_min.css" >
 </head>
+
+
 <body>
-	<h1 style="text-align:center;">Mario Puzo</h1>
-	<center><img src="/static/images/MarioPuzoFace.jpg"/></center>
-	<hr/>
-	<p>Birthday: 1920-10-15</p>
-    <p>Name: Mario Puzo</p>
-    <p>Died: 1999-07-02</p>
-    <p>Description: Mario Gianluigi Puzo was an American author, screenwriter and journalist. He is known for his crime novels about the Mafia, most notably The Godfather, which he later co-adapted into a three-part film saga directed by Francis Ford Coppola.</p>
-    <p>Nationality: American (Italo-American)</p>
-    <p><a href = "https://en.wikipedia.org/wiki/Mario_Puzo">Wikipedia URL</a></p>
-    <p><a href = "http://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Mario_Puzo.jpg/220px-Mario_Puzo.jpg">Image URL</a></p>
-    <hr />
+
+    <div class="jumbotron text-center">
+	<h1>Mario Puzo</h1>
+	<div class = "cover"><img src="/static/images/MarioPuzoFace.jpg"/></center>
+	</div>
+    </div>
+
+    <div class = "container">
+    <div class = "info">
+    <h2>Information:</h2>    
+	<p><b>Birthday:</b> 1920-10-15</p>
+    <p><b>Name:</b> Mario Puzo</p>
+    <p><b>Died:</b> 1999-07-02</p>
+    <p><b>Description:</b> Mario Gianluigi Puzo was an American author, screenwriter and journalist. He is known for his crime novels about the Mafia, most notably The Godfather, which he later co-adapted into a three-part film saga directed by Francis Ford Coppola.</p>
+    <p><b>Nationality:</b> American (Italo-American)</p>
+    <p><a href = "https://en.wikipedia.org/wiki/Mario_Puzo"><b>Wikipedia URL</b></a></p>
+    <p><a href = "http://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Mario_Puzo.jpg/220px-Mario_Puzo.jpg"><b>Image URL</b></a></p>
+    </div>
+
+    <div class = "links">
+
+	
+
     <h1>Links:</h1>
     <h2>Books:</h2>
     <p><a href = {{ url_for('thegodfather') }}>The Godfather</a></p>
     <h2>Publishers:</h2>
     <p><a href = {{ url_for('penguingroup') }}>Penguin Group</a></p>
+    </div>
+    </div>
+        <a href={{ url_for('authors') }}>Go Back to Authors</a><br/>
 </body>
 </html>

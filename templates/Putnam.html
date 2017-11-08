@@ -1,25 +1,50 @@
 
 <html>
 <head>
-	<style>
-		body {
-			background-color: #fff8e7;
-			font-family: calibri;
-			}
-	</style>
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
-      rel="stylesheet">
+		<title>Publishers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" type="text/css" href="/static/css/bootstrap_min.css" >
+
+    <style>
+      .container{float:center;}
+      .info{float:left;display:block;width:50% }
+      .links{float:right;display:block:width:50%;}  
+  </style>
 </head>
 <body>
-	<h1 style="text-align:center;">G. P. Putnam's Sons</h1>
-	<hr/>
-	<p>"founded": "1853"</p>
-    <p>"name": "G.P. Putnam's Sons"</p>
-    <p>"location": "New York, New York"</p>
-    <p>"wikipedia_url": "https://en.wikipedia.org/wiki/G._P._Putnam%27s_Sons</p>
-    <p>"description": "G. P. Putnam's Sons is an American book publisher based in New York City, New York. Since 1996, it has been an imprint of the Penguin Group.". </p>
-    <p>"parent company": "Penguin Group"</p>
-    <p>"image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Putnam_Logo.png"</p>
-    <p>"website": "http://PenguinGroup.com"</p>
-    <hr/>
+
+    <div class="jumbotron text-center">
+	<h1>G. P. Putnam's Sons</h1>
+	<div class = "cover"><img src = "/static/images/Putnam_Logo.png">
+	</div>
+	</div>
+
+    <div class = "container">
+    <div class = "info">
+    <h2>Information:</h2>	
+	<p><b>Founded:</b> 1853</p>
+    <p><b>Name:</b> G.P. Putnam's Sons</p>
+    <p><b>Location:</b> New York, New York</p>
+    <p><a href ="https://en.wikipedia.org/wiki/G._P._Putnam%27s_Sons"><b>Wikipedia URL</b></a></p>
+    <p><b>Description:</b> G. P. Putnam's Sons is an American book publisher based in New York City, New York. Since 1996, it has been an imprint of the Penguin Group.</p>
+    <p><b>Parent Company:</b> Penguin Group</p>
+    <p><a href = "https://upload.wikimedia.org/wikipedia/commons/3/3e/Putnam_Logo.png"><b>Image URL</b></a></p>
+    <p><a href = "http://PenguinGroup.com"><b>Website</b></a></p>
+	</div>
+
+    <div class "links">	
+
+
+
+		<h1>Links:</h1>
+      <h2>Authors:</h2>
+      <p><a href = {{ url_for('heinlein') }}>Robert A. Heinlein</a></p>
+      <h2>Books:</h2>
+      <p><a href = {{ url_for('stranger') }}>Stranger in a Strange Land</a></p>
+    </div>
+    </div>
+  <a href={{ url_for('publishers') }}>Go Back to Publishers</a><br/>
+      
 </body>
+</html>

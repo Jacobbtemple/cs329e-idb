@@ -1,0 +1,650 @@
+commit 31b8079cb672c643e64580b102fca8f5c7b7e589
+Merge: 9d6628f 57fa1b0
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Thu Oct 26 21:03:40 2017 -0500
+
+    Merge branch 'master' of https://github.com/Jacobbtemple/cs329e-idb
+
+commit 9d6628fea7bc02e97a23c257746a91be75d458ba
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Thu Oct 26 21:02:56 2017 -0500
+
+    ITs over; its done
+
+commit 57fa1b04397e6393c2707c183b69d7540cbcb748
+Merge: e5783da b1eed34
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Thu Oct 26 20:54:46 2017 -0500
+
+    Merge branch 'Shayaan'
+
+commit b1eed34479af7cba8e717cf38751a21b73705f01
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Thu Oct 26 20:54:13 2017 -0500
+
+    finished pillar page styling
+
+commit e5783da36c0537ecb260961d2022ae8c47680118
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Thu Oct 26 20:45:18 2017 -0500
+
+    fixed merge conflicts
+
+commit c8a67e712b390cf14bacc43b095ed108ae9fc1d1
+Author: Christina Hoang <christinahoang@utexas.edu>
+Date:   Thu Oct 26 20:43:51 2017 -0500
+
+    Update About
+
+commit cfe69aed7658cfee698ecd9f888da68d7b2bbd34
+Author: Christina Hoang <christinahoang@utexas.edu>
+Date:   Thu Oct 26 20:37:42 2017 -0500
+
+    Update about
+
+commit 7bffa4d6b515b147fbcce0cfc4ca39cbd88546f6
+Merge: 8fad5db b537182
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Thu Oct 26 20:26:34 2017 -0500
+
+    Merge branch 'master' of https://github.com/Jacobbtemple/cs329e-idb
+
+commit 8fad5db4f3e1c797ef33c3f50bbbfe44c849c1dd
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Thu Oct 26 20:24:20 2017 -0500
+
+    styled books page
+
+commit b537182825e9a0c38870d45bab85531806ebda3c
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Thu Oct 26 20:23:00 2017 -0500
+
+    updating about page
+
+commit 6ef8dc372fe571266b650c84d02656b416559afc
+Merge: 309b2ee 42ffb36
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Thu Oct 26 20:00:45 2017 -0500
+
+    Merge branch 'Shayaan'
+
+commit 42ffb361b2bb63ef0fbd527da67217370b939381
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Thu Oct 26 19:55:49 2017 -0500
+
+    final splash page
+
+commit 309b2eec28d311275520d7eec15c66764387a871
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Thu Oct 26 19:45:42 2017 -0500
+
+    about page bootstrap
+
+commit 804f092d74909721e39b0b85dca06af558949967
+Author: JacobVanderlinden <jacobvanderlinden.0@gmail.com>
+Date:   Thu Oct 26 19:05:35 2017 -0500
+
+    Removed stray line
+
+commit 5fcf3bb0e51da908c7d6c908c410e79a381b4bf1
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Thu Oct 26 19:04:42 2017 -0500
+
+    rescinding heinlein
+
+commit eaf2d6a080f9a289afa63a629178fe7dd57ba281
+Merge: f478072 a594088
+Author: JacobVanderlinden <jacobvanderlinden.0@gmail.com>
+Date:   Thu Oct 26 19:02:31 2017 -0500
+
+    Merge branch 'dev'
+
+commit a594088d5fa39c6b6a9019a91455561b9cba9a0e
+Author: JacobVanderlinden <jacobvanderlinden.0@gmail.com>
+Date:   Thu Oct 26 19:01:33 2017 -0500
+
+    Added link to about on splash
+
+commit f4780726a14a9279d9d13576d382e3ed86a1da52
+Author: William Walker <williamtwalker@cox.net>
+Date:   Thu Oct 26 18:56:15 2017 -0500
+
+    what
+
+commit 7e5b6bd77bd3a30580cefa71574b0a60e5dc7864
+Merge: 61d24bb 5107b27
+Author: William Walker <williamtwalker@cox.net>
+Date:   Thu Oct 26 18:53:45 2017 -0500
+
+    Merge branch 'master' into Will
+
+commit 61d24bb79ec26509db99da4d55a8d8d4d2126667
+Author: William Walker <williamtwalker@cox.net>
+Date:   Thu Oct 26 18:53:06 2017 -0500
+
+    why
+
+commit 5107b27edfba60df06ca3f455062dcace061ab30
+Merge: b87cc0d 18594e4
+Author: JacobVanderlinden <jacobvanderlinden.0@gmail.com>
+Date:   Thu Oct 26 18:48:16 2017 -0500
+
+    Merge branch 'master' into dev
+
+commit b87cc0d1b07e3c036a14b29aa57060ac5b96c890
+Author: JacobVanderlinden <jacobvanderlinden.0@gmail.com>
+Date:   Thu Oct 26 18:47:03 2017 -0500
+
+    Split splash into splash and merge
+
+commit 18594e469c989c56e8124987201bc74bdcb40216
+Author: shayaanjagtap <31865035+shayaanjagtap@users.noreply.github.com>
+Date:   Thu Oct 26 18:37:12 2017 -0500
+
+    added ignore venv
+
+commit 06db91d3689edac186c0034d13dfbeeaec47be48
+Merge: 3b1cab3 91bcdbf
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Thu Oct 26 18:17:53 2017 -0500
+
+    commit
+
+commit 3b1cab3c7b226397d7f42b0bebbafb9390db5692
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Thu Oct 26 18:15:37 2017 -0500
+
+    last one
+
+commit 73082087d5f24554249354a4b04430b1f80c3d8d
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Thu Oct 26 18:14:46 2017 -0500
+
+    another one
+
+commit 2e4b77d7dec74d26ca96144344ff8bc3d49c27ca
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Thu Oct 26 18:10:56 2017 -0500
+
+    fixed splash conflict
+
+commit 91bcdbf507b74f6554d91464d8b0cf85687d7877
+Merge: cc6a093 93d7a70
+Author: William Walker <williamtwalker@cox.net>
+Date:   Thu Oct 26 17:56:56 2017 -0500
+
+    Merge https://github.com/Jacobbtemple/cs329e-idb
+
+commit 93d7a7011ac82c634d5e5f9a94fc8abd99e69a9e
+Author: shayaanjagtap <31865035+shayaanjagtap@users.noreply.github.com>
+Date:   Thu Oct 26 17:54:19 2017 -0500
+
+    Create README.md
+
+commit cc6a093449bc2d0c55faf66c6421448a114adde6
+Merge: d638461 4efbb61
+Author: William Walker <williamtwalker@cox.net>
+Date:   Thu Oct 26 17:51:45 2017 -0500
+
+    Merge https://github.com/Jacobbtemple/cs329e-idb into Will
+
+commit d638461bc052e5a91615fca5a702fb247fd32a86
+Author: William Walker <williamtwalker@cox.net>
+Date:   Thu Oct 26 17:49:54 2017 -0500
+
+    updated splash page
+
+commit 4efbb614ce2476337548b728162ece1a5b782290
+Merge: 250dbf4 e99edec
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Thu Oct 26 17:26:38 2017 -0500
+
+    what
+
+commit e99edec8099a79a1cc2096a9a839bc72c43cd34e
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Thu Oct 26 17:24:57 2017 -0500
+
+    adding return to splash to all pages
+
+commit 250dbf469ecb8fd7fee4f9423f91c85eede1e6df
+Merge: db679c6 209d2fe
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Thu Oct 26 17:09:12 2017 -0500
+
+    partial splash css added
+
+commit 209d2fe12e7e9f0cb51b947d6317e22d20e82c0a
+Merge: 20b895b af804f5
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Thu Oct 26 16:58:50 2017 -0500
+
+    updated splash css, not finished
+
+commit 20b895b1ab754d29452bcacca844fdcf6fd40342
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Thu Oct 26 16:57:48 2017 -0500
+
+    updated splash css, not finished
+
+commit af804f5758163bd817460d254c38aeb417de33a6
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Thu Oct 26 14:24:33 2017 -0500
+
+    finalized instance pages
+
+commit db679c6dc04eb99b4c6c4d9baf9126efcd666195
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Thu Oct 26 13:45:28 2017 -0500
+
+    splash css in progress
+
+commit 60681a0a774972afb84c03a02186fbe601ca2b0c
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Thu Oct 26 13:32:51 2017 -0500
+
+    instances css
+
+commit d7d890223a2d24662c130803113ba1bab81e4433
+Merge: aebfd69 829409c
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Thu Oct 26 13:31:44 2017 -0500
+
+    Merge branch 'master' of https://github.com/Jacobbtemple/cs329e-idb
+
+commit 829409c0ce35da908db71a6bc6cb3603e53a5a9f
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Thu Oct 26 13:27:10 2017 -0500
+
+    adding jacob's picture to splash
+
+commit 3435329b093cbbf73cba9e49774752d2b20afc92
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Thu Oct 26 13:23:17 2017 -0500
+
+    adding putnam logo
+
+commit b8fbcfa8e1789ec8c1c5ee421a0b7d943b8a859c
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Thu Oct 26 13:19:21 2017 -0500
+
+    add putnam link to books.html
+
+commit 15537169078a5676c9f5fd7e8718ba0bccdaafaf
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Thu Oct 26 13:16:16 2017 -0500
+
+    deleting blank author
+
+commit e3c160969a47abff411aeb1a1a58662ee139d808
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Thu Oct 26 13:14:07 2017 -0500
+
+    updating authors.html
+
+commit 6fe804363be3e05226a9cd0f59a74a93b1cee27e
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Thu Oct 26 13:10:05 2017 -0500
+
+    updating authors.html
+
+commit a57bb220521a6e52f7b5b6c3ca9c9268600116f2
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Thu Oct 26 13:01:08 2017 -0500
+
+    updating heinlein and putnam
+
+commit 91733df76e726a78c145ee8366e2cf8f445ea3c7
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Thu Oct 26 12:54:59 2017 -0500
+
+    adding heinlein face
+
+commit aebfd693c75ab54f41c8025f9fc1a62586aba7e5
+Merge: d4d4353 bd7006e
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Thu Oct 26 12:52:57 2017 -0500
+
+    Merge branch 'master' of https://github.com/Jacobbtemple/cs329e-idb
+
+commit abd3b1ced65b01a53311f72fd64c9d27f8045a1f
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Thu Oct 26 12:48:25 2017 -0500
+
+    added multiple css sheets
+
+commit bd7006e04c313d97ad750f196bb37292eae9c0ee
+Merge: 1e4fe3e 8cd4be3
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Thu Oct 26 09:59:26 2017 -0500
+
+    fixed merge conflicts
+
+commit d4d4353d52a3f87c327fd5a09771c71514c433ca
+Merge: 87e74f0 8cd4be3
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Thu Oct 26 09:36:42 2017 -0500
+
+    Merge branch 'master' of https://github.com/Jacobbtemple/cs329e-idb
+
+commit 8cd4be324ddba2d3333b7dd253d8ece4290bf311
+Author: JacobVanderlinden <jacobvanderlinden.0@gmail.com>
+Date:   Thu Oct 26 09:34:08 2017 -0500
+
+    Moved app.yaml
+
+commit 8edad906f26ac1c81df6d8d9cc2329a55b9b14e5
+Author: JacobVanderlinden <jacobvanderlinden.0@gmail.com>
+Date:   Thu Oct 26 09:18:08 2017 -0500
+
+    Fixed links
+
+commit 965739c3533a29040dc1628bbeb4ca8d13d4b305
+Author: JacobVanderlinden <jacobvanderlinden.0@gmail.com>
+Date:   Thu Oct 26 09:14:21 2017 -0500
+
+    Fixed broken links
+
+commit 577f23ed6a5ee6d3a555113dc5372f65ed8f0556
+Merge: 1d7cab1 de7955a
+Author: JacobVanderlinden <jacobvanderlinden.0@gmail.com>
+Date:   Thu Oct 26 08:57:25 2017 -0500
+
+    Merge branch 'master' of https://github.com/Jacobbtemple/cs329e-idb
+
+commit 1e4fe3edc4d472e8e28eb0eedd24a2e44d743c6e
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Wed Oct 25 18:25:10 2017 -0500
+
+    added css reference line
+
+commit de7955aa91d645898d8e2085823d68f4c3a12212
+Author: William Walker <williamtwalker@cox.net>
+Date:   Wed Oct 25 16:14:44 2017 -0500
+
+    added bio
+
+commit 085707f00b530c7f352dd32712f1e66d191e8ecb
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Wed Oct 25 14:59:01 2017 -0500
+
+    updating Books.html
+
+commit 1caa4c3e7e1513d487e5e8a8812872f225fdf69b
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Wed Oct 25 14:50:44 2017 -0500
+
+    updated publishers,html
+
+commit b5a3bd516ebfd59add8dbcc894d4f0b68ff5f398
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Wed Oct 25 14:35:09 2017 -0500
+
+    updating authors.html
+
+commit 0ce96127a897016404975b6f43feea073e55f121
+Author: William Walker <williamtwalker@cox.net>
+Date:   Wed Oct 25 13:18:30 2017 -0500
+
+    images
+
+commit c916ba0ba09495d935ab98c5cef57807695af0df
+Author: williamtwalker <31518637+williamtwalker@users.noreply.github.com>
+Date:   Wed Oct 25 13:09:21 2017 -0500
+
+    Add files via upload
+
+commit 2eb44a1073c0c80cea3a435f88ef6ef6a60a26ef
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Wed Oct 25 12:11:41 2017 -0500
+
+    updated Putnam.html
+
+commit cec532e79b04f783a581f75f29a21eaeef34b163
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Wed Oct 25 12:09:46 2017 -0500
+
+    updating Strnager.html
+
+commit 5bcfa5834e9eb6d494ae69d696fff80590045a60
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Wed Oct 25 12:06:38 2017 -0500
+
+    updated Heinlein
+
+commit 87e74f02455504c168febc4bad7d3d63aa4da2a5
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Wed Oct 25 08:58:43 2017 -0500
+
+    .gitignore
+
+commit 1d7cab16fa16e672c60ad3a98eaf5a769aac1744
+Merge: e053eaa 450937f
+Author: JacobVanderlinden <jacobvanderlinden.0@gmail.com>
+Date:   Tue Oct 24 09:53:44 2017 -0500
+
+    Merge branch 'dev'
+
+commit e053eaaf2afff1adf3c7fcfcd13381b5d0eb2c1d
+Author: William Walker <williamtwalker@cox.net>
+Date:   Mon Oct 23 19:47:57 2017 -0500
+
+    about page
+
+commit 1bd43db50702b2c109ff181bf3e36adaa4d4ae61
+Author: William Walker <williamtwalker@cox.net>
+Date:   Mon Oct 23 18:41:25 2017 -0500
+
+    added stats on about page
+
+commit b2a855f4d7b48d04bba1f84a9bc96311dba02167
+Merge: b9f7753 910bb8b
+Author: William Walker <williamtwalker@cox.net>
+Date:   Mon Oct 23 18:16:39 2017 -0500
+
+    Merge https://github.com/Jacobbtemple/cs329e-idb into Will
+
+commit b9f77537bf00691042b375190d4aa37fa03a1a0e
+Merge: 5a85b94 37c76ee
+Author: William Walker <williamtwalker@cox.net>
+Date:   Mon Oct 23 18:14:31 2017 -0500
+
+    Merge branch 'master' into Will
+
+commit 5a85b94b219e3ee23d801f776431c7e0fcf00551
+Author: William Walker <williamtwalker@cox.net>
+Date:   Mon Oct 23 18:10:14 2017 -0500
+
+    added images to bios
+
+commit 910bb8b89a48e574fc96a21a081ea506ed1d307a
+Merge: 34f3b5f 37c76ee
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Mon Oct 23 18:02:41 2017 -0500
+
+    update
+
+commit 37c76ee72302a4bfaedfa0d6f7dd7d305c48c61e
+Author: William Walker <williamtwalker@cox.net>
+Date:   Mon Oct 23 17:57:54 2017 -0500
+
+    need to switch to master
+
+commit 34f3b5fe7511e4fea67bf0a9bfae2193e8f53667
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Mon Oct 23 17:57:40 2017 -0500
+
+    updating app2
+
+commit 665ac93e64d55c2df5fff703c37ba66c6c7b2390
+Author: William Walker <williamtwalker@cox.net>
+Date:   Mon Oct 23 17:54:06 2017 -0500
+
+    updated bios
+
+commit f291ef42533f84a8f2e8a4d4ce2ec435f886811d
+Author: shayaanj <shayaan.jagtap@gmail.com>
+Date:   Mon Oct 23 17:52:10 2017 -0500
+
+    bootstrap folder
+
+commit 914cde55a177b409fc5df141ebe88b91f68d4200
+Author: Christina Hoang <christinahoang@utexas.edu>
+Date:   Mon Oct 23 17:42:05 2017 -0500
+
+    Add photo
+
+commit 874bc7877224cdf82df14f9eea9a0aee7e4b9737
+Author: JacobVanderlinden <jacobvanderlinden.0@gmail.com>
+Date:   Mon Oct 23 17:39:46 2017 -0500
+
+    Added picture Jacob V
+
+commit cdc9762f3c3aca23ee7feb2d47d0a3b7545d473a
+Author: William Walker <williamtwalker@cox.net>
+Date:   Mon Oct 23 17:35:13 2017 -0500
+
+    beginning of about page
+
+commit c1fd7ee177d56c1067cce224b8322ec2491d0520
+Author: Christina Hoang <christinahoang@utexas.edu>
+Date:   Mon Oct 23 17:32:59 2017 -0500
+
+    Update models.py
+
+commit 038097ed189149f5907a4ce30a4522449278773d
+Author: Christina Hoang <christinahoang@utexas.edu>
+Date:   Mon Oct 23 17:06:17 2017 -0500
+
+    Update models.py
+
+commit 1d265a0e13c906da9e9646f1869da4d709a94f6e
+Author: JacobVanderlinden <jacobvanderlinden.0@gmail.com>
+Date:   Mon Oct 23 16:24:01 2017 -0500
+
+    Added Godfather book information to all pages
+
+commit c2360c38046a783748f7b26c175446128b9a6ce8
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Mon Oct 23 13:52:28 2017 -0500
+
+    adding Jacob's files
+
+commit 7d3a4371ef8d0c05f225ca05ecfe92d98b54edc7
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Mon Oct 23 10:40:45 2017 -0500
+
+    few fixes to pillars
+
+commit bb9381584a687de2529b667f51f59c3062d1daef
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Mon Oct 23 10:26:54 2017 -0500
+
+    Cleaned code and added links on instances
+
+commit 24730deecfc06b26c92d13aeb1d96d613515170f
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Sun Oct 22 20:27:32 2017 -0500
+
+    Added sortable tables to 3 pillars
+
+commit 06cb67873fafd13b2619757a641e65146a46bfd2
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Sun Oct 22 20:05:21 2017 -0500
+
+    reset to default venv
+
+commit 6233401e088d7d5d4ba58db843e75df12f75a36f
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Sun Oct 22 19:58:03 2017 -0500
+
+    Revert "Removed tutorial files"
+    
+    This reverts commit df4924142e0e4b1c5b441f8001e0ba6e9d45b875.
+
+commit 4421e8621d815680fe3eb6af8b8a4c4b0ef34212
+Merge: beac255 df49241
+Author: jacob <jacob@cs.utexas.edu>
+Date:   Sun Oct 22 19:51:24 2017 -0500
+
+    Merge branch 'master' of https://github.com/Jacobbtemple/cs329e-idb
+
+commit beac2555fb6f3ef09ce9a4453ecf3a11f5bcf3ce
+Author: jacob <jacob@cs.utexas.edu>
+Date:   Sun Oct 22 19:50:46 2017 -0500
+
+    Added pages (pre-link)
+
+commit df4924142e0e4b1c5b441f8001e0ba6e9d45b875
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Sun Oct 22 19:24:36 2017 -0500
+
+    Removed tutorial files
+
+commit 5ff4325c819b66234e93efd43cd1d58fa57ca736
+Merge: 9e3ac1c 6cea0e8
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Sun Oct 22 19:18:06 2017 -0500
+
+    test
+
+commit 9e3ac1c09b8a3ef9c8791528a3d3d7514971d636
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Sun Oct 22 19:14:15 2017 -0500
+
+    Basic code ready
+
+commit f6abcedfc794e3d27aa30513e73e6e916237c008
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Sun Oct 22 15:10:16 2017 -0500
+
+    Added bootstrap cdn url
+
+commit 8dd90f40929e94451b766a2fb9f0dfece118ce0d
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Sun Oct 22 14:53:08 2017 -0500
+
+    test html files working
+
+commit 450937facd39d0fba60821042757a10068f47fb9
+Author: JacobVanderlinden <jacobvanderlinden.0@gmail.com>
+Date:   Sat Oct 21 20:07:27 2017 -0500
+
+    Created some HTML files, need to add more info
+
+commit 6cea0e8201de81fc14eec9b2f8a7b3067bff5972
+Merge: b14cc6b 7c0f3b8
+Author: Christina Hoang <christinahoang@utexas.edu>
+Date:   Fri Oct 20 17:45:37 2017 -0500
+
+    Update
+
+commit b14cc6b92b20fa0946aaa8addfa414f1cf049bdf
+Author: Christina Hoang <christinahoang@utexas.edu>
+Date:   Fri Oct 20 17:44:49 2017 -0500
+
+    create_db.py
+
+commit 209ddd491b6206285febf91def896265f47194e9
+Author: Christina Hoang <christinahoang@utexas.edu>
+Date:   Fri Oct 20 17:38:37 2017 -0500
+
+    create_db.py
+
+commit 7c0f3b87b19e6ce298d0402ff211a095e912e4b4
+Author: Jacob Temple <jacobbtemple@gmail.com>
+Date:   Fri Oct 20 17:35:49 2017 -0500
+
+    here goes
+
+commit c04c9c70f6a1593cbbf569f22f1cd866df46d176
+Author: Christina Hoang <christinahoang@utexas.edu>
+Date:   Fri Oct 20 17:29:04 2017 -0500
+
+    books.json
+
+commit 26dc8b7f1e802cd955294272040fc1ad29753e44
+Author: Yujie Hou <jeffreyhou1997@outlook.com>
+Date:   Fri Oct 20 16:45:05 2017 -0500
+
+    first commit
