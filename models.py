@@ -25,7 +25,7 @@ Base = declarative_base()
 
 class Book(Base):
     __tablename__ = 'book'
-    google_id = Column(Integer, primary_key=True)
+    google_id = Column(String(100), primary_key=True)
     title = Column(String(100), nullable=False)
     isbn = Column(String(100), nullable=False)
     publication_date = Column(String(100), nullable=False)
@@ -49,7 +49,7 @@ class Book(Base):
 
 
 
-SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:fraij@localhost/books')
+SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:19970131@localhost/mydb')
 #MESSAGE FROM JEFF: TO RUN LOCALLY, CHANGE POSTGRES->YOUR USERNAME, CHANGE FRAIJ->YOUR PASSWORD, CHANGE BOOKS->YOUR DB NAME
 
 engine = create_engine(SQLALCHEMY_DATABASE_URI)
