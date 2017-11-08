@@ -46,16 +46,14 @@ def create_book():
         publishers = oneBook['publishers']
         authors = oneBook['authors']
 
-        publishers = oneBook['publishers']
         for onePublisher in publishers:
-            wikipedia_url = onePublisher['wikipedia_url']
+            publisher_wikipedia_url = onePublisher['wikipedia_url']
             publisher_name = onePublisher['name']
             publisher_description = onePublisher['description']
             owner = onePublisher['owner']
             publisher_image_url = onePublisher['image_url']
             website = onePublisher['website']
-        
-        authors = oneBook['authors']
+
         for oneAuthor in authors:
             born = oneAuthor['born']
             author_name = oneAuthor['name']
