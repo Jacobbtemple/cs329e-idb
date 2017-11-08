@@ -25,16 +25,16 @@ def authors():
 
 @app.route('/authors/<name>')
 def author_template(name):
-	info = session.query(Author).filter_by(name=name)
+	info = session.query(authors).filter_by(name=name)
 	birthday = info.birthday.first() #Depends on table call name
-	education = info. education.first() #Depends on table call name
+	education = info.education.first() #Depends on table call name
 	nationality = info.nationality.first() #Depends on table call name
-	about = info.about.first() #Depends on table call name
-	school = info.school.first() #Depends on table call name
-	wiki = info.wiki.first() #Depends on table call name
-	image = info.wiki.first() #Depends on table call name
+	description = info.description.first() #Depends on table call name
+	alma_mater = info.alma_mater.first() #Depends on table call name
+	wiki_url = info.wiki_url.first() #Depends on table call name
+	image_url = info.image_url.first() #Depends on table call name
 	books = info.books #Depends on table call name
-	return render_template('author_template.html', name=name, birthday=birthday, education=education, nationality=nationality, about=about, school=school, wiki=wiki, image=image, books=books)
+	return render_template('author_template.html', name=name, born=born, education=education, nationality=nationality, description=description, alma_mater=alma_mater, author_wikipedia_url=author_wikipedia_url, author_image_url=author_image_url, books=books)
 
 if __name__ == '__main__':
     # This is used when running locally. Gunicorn is used to run the
