@@ -27,7 +27,6 @@ DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
 
-
 def load_json(filename):
     with open(filename) as file:
         jsn = json.load(file)
@@ -35,29 +34,19 @@ def load_json(filename):
 
     return jsn
 
-
 def create_book():
     books = load_json('books.json')
     for oneBook in books:
         google_id = oneBook['google_id']
         title = oneBook['title']
+        isbn = oneBook['isbn']
         book_publication_date = oneBook['publication_date']
         book_image_url = oneBook['image_url']
         book_description = oneBook['description']
-        publishers = oneBook['publishers'] #should this be an instance
-        authors = oneBook['authors'] #should this be an instance
-
-        newBook = Book(title=title, google_id=google_id)
-        # After I create the book, I can then add it to my session.
-        session.add(newBook)
-        # commit the session to my DB.
-        session.commit()
-
-def create_publisher():
-    books = load_jason('books.json')
-    for oneBook in books:
         publishers = oneBook['publishers']
+        authors = oneBook['authors']
 
+        publishers = oneBook['publishers']
         for onePublisher in publishers:
             wikipedia_url = onePublisher['wikipedia_url']
             publisher_name = onePublisher['name']
@@ -65,16 +54,7 @@ def create_publisher():
             owner = onePublisher['owner']
             publisher_image_url = onePublisher['image_url']
             website = onePublisher['website']
-
-            newPublisher = Publisher(name=name, owner=owner)
-            # After I create the publisher, I can then add it to my session.
-            session.add(newPublisher)
-            # commit the session to my DB.
-            session.commit()
-
-def create_author():
-    books = load_jason('books.json')
-    for oneBook in books:
+        
         authors = oneBook['authors']
         for oneAuthor in authors:
             born = oneAuthor['born']
@@ -86,12 +66,11 @@ def create_author():
             author_wikipedia_url = oneAuthor['wikipedia_url']
             author_image_url = oneAuthor['image_url']
 
-            newAuthor = Author(name=name, nationlity=nationality)
-            # After I create the author, I can then add it to my session.
-            session.add(newAuthor)
-            # commit the session to my DB.
-            session.commit()
+
+        newBook = Book(title=title, google_id=google_id)
+        # After I create the book, I can then add it to my session.
+        session.add(newBook)
+        # commit the session to my DB.
+        session.commit()
 
 create_book()
-create_publisher()
-create_author()
