@@ -44,7 +44,7 @@ def create_books():
         pub_date    = oneBook['publication_date']
         img_url     = oneBook['image_url']
         description = oneBook['description']
-        publisher   = oneBook['publisher'][0]['name']
+        publisher   = oneBook['publisher'][0]['name'] # needs to be changed
         author      = oneBook['author'][0]['name']
 
         for publisher in oneBook['publishers']:
