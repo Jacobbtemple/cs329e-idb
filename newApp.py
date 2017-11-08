@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, url_for
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Base, Book, engine
-from create_db import create_book, session 
+from create_db import create_book, session
 import subprocess
 import json
 
@@ -23,11 +23,13 @@ def books():
 
 @app.route('/publishers')
 def publishers():
+	publishers = session.query(Book).distinct(Book.publisher_name)
 	return render_template('publishers.html')
 
 @app.route('/authors')
 def authors():
-	return render_template('authors.html')
+	authors = session.query(Book).distinct(Book.author_name)
+	return render_template('authors.html', authors = authors)
 
 @app.route('/authors/<name>')
 def author_page(name):
@@ -39,7 +41,7 @@ def author_page(name):
 	description = info.first().author_description
 	alma_mater = info.first().alma_mater
 	wikipedia_url = info.first().author_wikipedia_url
-	image_url = info.first().author_image_url 
+	image_url = info.first().author_image_url
 
 	return render_template('author_template.html', info=info, name=name, birthday=birthday, education=education, nationality=nationality,\
 	description=description, alma_mater=alma_mater, wikipedia_url=wikipedia_url, image_url=image_url)
