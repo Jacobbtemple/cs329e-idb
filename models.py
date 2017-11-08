@@ -29,31 +29,23 @@ class Book(Base):
     title = Column(String(100), nullable=False)
     isbn = Column(String(100), nullable=False)
     publication_date = Column(String(100), nullable=False)
-    publisher = Column(String(100), nullable=False)
-    author = Column(String(100), nullable=False)
-
-class Publisher(Base):
-    __tablename__ = 'publisher'
-    wiki_url = Column(String(100), nullable=False)
-    name = Column(String(100), primary_key = True)
-    description = Column(String(100), nullable=False)
+    image_url = Column(String(100), nullable = False)
+    book_description = Column(String(100), nullable=False)
+    publisher_wikipedia_url = Column(String(100), nullable=False)
+    publisher_name = Column(String(100), nullable=False)
+    publisher_description = Column(String(100), nullable=False)
     owner = Column(String(100), nullable=False)
-    image_url = Column(String(100), nullable=False)
+    publisher_image_url = Column(String(100), nullable=False)
     website = Column(String(100), nullable=False)
-    books = Column(String(100), primary_key = True)
-
-class Author(Base):
-    __tablename__ = 'author'
-    birthday = Column(String(100), nullable=False)
-    name = Column(String(100), primary_key = True)
+    born = Column(String(100), nullable=False)
+    author_name = Column(String(100), nullable=False)
     education = Column(String(100), nullable=False)
     nationality = Column(String(100), nullable=False)
-    description = Column(String(100), nullable=False)
+    description = Column(String(3000), nullable=False)
     alma_mater = Column(String(100), nullable=False)
-    wiki_url = Column(String(100), nullable=False)
-    image_url = Column(String(100), nullable=False)
-    books =  Column(String(100), primary_key = True)
-
+    author_wikipedia_url = Column(String(100), nullable=False)
+    author_image_url = Column(String(100), nullable=False)
+    
 
 
 
