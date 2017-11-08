@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <title>Authors</title>
+  <!--<link rel="stylesheet" type="text/css" href="static/css/index.css">-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap_min.css" >
+    <script src="static/js/sorttable.js"></script>
+
+  <style>
+  </style>
+  </head>
+
+  <body>
+  <div class="jumbotron text-center">
+    <h1>{{title}}</h1>
+    <div class = "cover"><img src = "{{image_url}}"></div>
+  </div>
+
+  <div class = "container">
+    <div class = "row">
+      <div class = "col">
+        <h2>Information: </h2>
+        <p><b>Google ID: </b>{{google_id}}</p>
+        <p><b>ISBN: </b>{{isbn}}</p>
+        <p><b>Title: </b>{{title}}</p>
+        <p><b>Publication Date: </b>{{publication_date}}</p>
+        <p><b>Description: </b>{{description}}</p>
+        <p><a href = "{{image_url}}"><b>Image URL</b></a></p>
+      </div>
+
+      <div class = "col">
+        <table cellpadding="5px" class="sortable table-bordered text-center" style="margin: auto; style">
+        <thead>
+          <tr><th>Authors of {{title}}</th></tr>
+        </thead>
+        <tbody>
+          {% for i in info %}
+            <tr>
+              <td><a href = "/authors/{{i.author_name}}">{{i.author_name}}</a></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </div>
+
+      <div class = "col">
+        <table cellpadding="5px" class="sortable table-bordered text-center" style="margin: auto; style">
+        <thead>
+          <tr><th>Publishers associated with {{title}}</th></tr>
+        </thead>
+        <tbody>
+          {% for i in info %}
+            <tr>
+              <td><a href = "/books/{{i.publisher_name}}">{{i.publisher_name}}</a></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </div>
+
+    </div>
+    <a href={{ url_for('splash') }}>Go Back to Splash</a><br/>
+  </div>
+
+  </body>
+</html>
