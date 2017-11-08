@@ -40,12 +40,12 @@
       <tbody>
         {% for i in books %}
           <tr>
-            <td><a href = {{ url_for('book_template', isbn={{i.isbn}})}}>&nbsp{{i.title}}&nbsp</a></td>
+            <td><a href = "/books/{{i.title}}">&nbsp{{i.title}}&nbsp</a></td>
             <td>&nbsp{{i.google_id}}&nbsp</td>
             <td>&nbsp{{i.isbn}}&nbsp</td>
             <td>{{i.publication_date}}</td>
-            <td><a href = {{ url_for('author_template', name={{i.authors}})}}>{{i.authors}}</a></td>
-            <td><a href = {{url_for('publisher_template', publisher={{i.publisher}})}}>{{i.publisher}}</a></td>
+            <td><a href = "/authors/{{i.authors}}">{{i.authors}}</a></td>
+            <td><a href = "/publishers/{{i.publisher}}">{{i.publisher}}</a></td>
           </tr>
         {% endfor %}
       </tbody>
