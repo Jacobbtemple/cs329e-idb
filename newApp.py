@@ -60,10 +60,17 @@ def book_page(title):
 	return render_template('book_template.html', info=info, title=title, google_id=google_id, isbn=isbn, publication_date = publication_date,\
 	description=description, image_url=image_url)
 
-#@app.route('/publishers/<publisher>')
-#def author_page(publisher):
-	#todo, test authors first
+@app.route('/publishers/<publisher_name>')
+def author_page(publisher):
+	info = session.query(Book).filter_by(publisher_name=publisher_name)
+	publisher_name = info.first().publisher_name
+	owner = info.first()owner
+	publisher_description = info.first().publisher_description
+	website = info.first().website
+	publisher_image_url = info.first().publisher_image_url
 
+	return render_template('publisher_template.html', info=info, publisher_name=publisher_name, owner=owner, publisher_description = publisher_description, \
+	website=website, publisher_image_url=publisher_image_url)
 @app.route('/unit_tests')
 def unit_tests():
   output = subprocess.getoutput("python test.py")
