@@ -32,9 +32,9 @@ def authors():
 	return render_template('newAuthors.html', authors = authors)
 
 @app.route('/authors/<author_name>')
-def author_page(name):
+def author_page(author_name):
 	# if do not add ".first()" to the end of this, the default data will look like a list of dictionaries
-	info = session.query(Book).filter_by(author_name=name)
+	info = session.query(Book).filter_by(author_name=author_name)
 	birthday = info.first().born
 	education = info.first().education
 	nationality = info.first().nationality
@@ -71,6 +71,7 @@ def publisher_page(publisher_name):
 
 	return render_template('publisher_template.html', info=info, publisher_name=publisher_name, owner=owner, publisher_description = publisher_description, \
 	website=website, publisher_image_url=publisher_image_url)
+
 @app.route('/unit_tests')
 def unit_tests():
   output = subprocess.getoutput("python test.py")
