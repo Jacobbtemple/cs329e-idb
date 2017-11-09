@@ -24,12 +24,12 @@ def books():
 @app.route('/publishers')
 def publishers():
 	publishers = session.query(Book).distinct(Book.publisher_name)
-	return render_template('publishers.html', publishers = publishers)
+	return render_template('newpublishers.html', publishers = publishers)
 
 @app.route('/authors')
 def authors():
 	authors = session.query(Book).distinct(Book.author_name)
-	return render_template('authors.html', authors = authors)
+	return render_template('newauthors.html', authors = authors)
 
 @app.route('/authors/<name>')
 def author_page(name):
