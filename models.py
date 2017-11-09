@@ -46,8 +46,28 @@ class Book(Base):
     author_wikipedia_url = Column(String())
     author_image_url = Column(String())
 
-
-
+class Test(Base):
+    __tablename__ = 'test'
+    google_id = Column(String())
+    title = Column(String(), primary_key = True)
+    isbn = Column(String())
+    publication_date = Column(String())
+    book_image_url = Column(String())
+    book_description = Column(String())
+    publisher_wikipedia_url = Column(String())
+    publisher_name = Column(String())
+    publisher_description = Column(String())
+    owner = Column(String())
+    publisher_image_url = Column(String())
+    website = Column(String())
+    born = Column(String())
+    author_name = Column(String())
+    education = Column(String())
+    nationality = Column(String())
+    author_description = Column(String())
+    alma_mater = Column(String())
+    author_wikipedia_url = Column(String())
+    author_image_url = Column(String())
 
 SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:19970131@localhost/mydb')
 #MESSAGE FROM JEFF: TO RUN LOCALLY, CHANGE POSTGRES->YOUR USERNAME, CHANGE FRAIJ->YOUR PASSWORD, CHANGE BOOKS->YOUR DB NAME
