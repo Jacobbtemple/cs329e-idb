@@ -64,7 +64,7 @@ def book_page(title):
 def author_page(publisher):
 	info = session.query(Book).filter_by(publisher_name=publisher_name)
 	publisher_name = info.first().publisher_name
-	owner = info.first()owner
+	owner = info.first().owner
 	publisher_description = info.first().publisher_description
 	website = info.first().website
 	publisher_image_url = info.first().publisher_image_url
