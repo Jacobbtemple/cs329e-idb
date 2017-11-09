@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+	<head>
+		<title>publishers</title>
+  <!--<link rel="stylesheet" type="text/css" href="static/css/index.css">-->
+  <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" -->
+      <!-- rel="stylesheet"> -->
+
+      <link rel="stylesheet" type="text/css" href="../static/css/bootstrap_min.css">
+
+      <!-- javascript to sort a table -->
+      <script src="static/js/sorttable.js"></script>
+	</head>
+
+	<body>
+
+
+    <div id="title" class="text-center title" style="color:DodgerBlue">
+      <br>
+      <h1 class="text-center">List of Publishers</h1>
+    </div>
+		<hr/>
+
+    <div class="text-center">
+      <button class="btn-default"><a href={{ url_for('splash') }}>Go Back to Splash</a><br/></button>
+    </div>
+
+
+    <div class="text_center">
+    <br>
+		{% if publishers == [] %}
+      <p>No publishers exist</p>
+    {% else %}
+      <table cellpadding="5px" class="sortable table-bordered text-center" style="margin: auto; style">
+		  <thead>
+        <tr><th>Name</th><th>&nbspowner&nbsp</th><th>website</th><th>&nbspwikipedia page&nbsp</th><th>description</th></tr>
+      </thead>
+      <tbody>
+        {% for i in publishers %}
+          <tr>
+            <td><a href = "/publishers/{{i.publisher_name}}">&nbsp{{i.publisher_name}}&nbsp</a></td>
+            <td>&nbsp{{i.owner}}&nbsp</td>
+            <td><a href = "{{i.website}}">&nbsp{{i.website}}&nbsp</td>
+            <td><a href = "{{i.wikipedia_url}">{{i.wikipedia_url}}</td>
+            <td>{{i.description}}</td>
+
+          </tr>
+        {% endfor %}
+      </tbody>
+      <tfoot>
+      <!-- example of calculating totals from a table-->
+      <!--<tr><td>TOTAL</td><td>£45,000</td></tr-->
+      </tfoot>
+      </table>
+    {% endif %}
+    </div>
+  </body>
+</html>
