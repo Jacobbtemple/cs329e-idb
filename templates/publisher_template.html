@@ -53,9 +53,10 @@
           <tr><th>Authors associated with {{publisher_name}}</th></tr>
         </thead>
         <tbody>
-          {% for i in info %}
+        <!-- i contains a list of unique author names-->
+          {% for i in li %}
             <tr>
-              <td><a href = "/authors/{{i.author_name}}">{{i.author_name}}</a></td>
+              <td><a href = "/authors/{{i}}">{{i}}</a></td>
             </tr>
           {% endfor %}
         </tbody>

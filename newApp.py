@@ -45,8 +45,8 @@ def author_page(author_name):
 
 	li = []
 	for i in info:
-		if i not in li:
-			li.append(i)
+		if i.publisher_name not in li:
+			li.append(i.publisher_name)
 
 	return render_template('author_template.html', info=info, author_name=author_name, birthday=birthday, education=education, nationality=nationality,\
 	description=description, alma_mater=alma_mater, wikipedia_url=wikipedia_url, image_url=image_url, li=li)
@@ -74,8 +74,13 @@ def publisher_page(publisher_name):
 	website = info.first().website
 	publisher_image_url = info.first().publisher_image_url
 
+	li = []
+	for i in info:
+		if i.author_name not in li:
+			li.append(i.author_name)
+
 	return render_template('publisher_template.html', info=info, publisher_name=publisher_name, owner=owner, publisher_description = publisher_description, \
-	website=website, publisher_image_url=publisher_image_url)
+	website=website, publisher_image_url=publisher_image_url, li=li)
 
 @app.route('/unit_tests')
 def unit_tests():
