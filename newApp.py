@@ -61,7 +61,7 @@ def book_page(title):
 	description=description, image_url=image_url)
 
 @app.route('/publishers/<publisher_name>')
-def publisher_page(publisher):
+def publisher_page(publisher_name):
 	info = session.query(Book).filter_by(publisher_name=publisher_name)
 	publisher_name = info.first().publisher_name
 	owner = info.first().owner
