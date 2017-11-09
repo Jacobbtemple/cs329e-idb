@@ -24,7 +24,7 @@ def books():
 @app.route('/publishers')
 def publishers():
 	publishers = session.query(Book).distinct(Book.publisher_name)
-	return render_template('publishers.html')
+	return render_template('publishers.html', publishers = publishers)
 
 @app.route('/authors')
 def authors():
