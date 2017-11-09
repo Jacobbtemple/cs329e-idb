@@ -84,8 +84,8 @@ def publisher_page(publisher_name):
 
 @app.route('/unit_tests')
 def unit_tests():
-  output = subprocess.getoutput("python test.py")
-  return json.dumps({'output': str(output)})
+	output = subprocess.getoutput("python test.py")
+	return json.dumps({'output': str(output)})
 
 
 if __name__ == '__main__':
