@@ -54,13 +54,10 @@
           <tr><th>Publishers associated with {{name}}</th></tr>
         </thead>
         <tbody>
-        {% li = [] %}
-          {% for i in info %}
-            {% if i not in li %}
-              {% li.append(i) %}
-              <tr>
-                <td><a href = "/books/{{i.publisher_name}}">{{i.publisher_name}}</a></td>
-              </tr>
+          {% for i in li %}
+            <tr>
+              <td><a href = "/publishers/{{i.publisher_name}}">{{i.publisher_name}}</a></td>
+            </tr>
           {% endfor %}
         </tbody>
       </div>

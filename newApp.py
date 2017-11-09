@@ -43,8 +43,13 @@ def author_page(author_name):
 	wikipedia_url = info.first().author_wikipedia_url
 	image_url = info.first().author_image_url
 
+	li = []
+	for i in info:
+		if i not in li:
+			li.append(i)
+
 	return render_template('author_template.html', info=info, author_name=author_name, birthday=birthday, education=education, nationality=nationality,\
-	description=description, alma_mater=alma_mater, wikipedia_url=wikipedia_url, image_url=image_url)
+	description=description, alma_mater=alma_mater, wikipedia_url=wikipedia_url, image_url=image_url, li=li)
 	# the list of books is passed through info. It needs to be done this way because we must use a loop to create
 	# the table of all books by the author
 
@@ -79,6 +84,6 @@ def unit_tests():
 
 
 if __name__ == '__main__':
-    # This is used when running locally. Gunicorn is used to run the
-    # application on Google App Engine. See entrypoint in app.yaml.
-    app.run(host='127.0.0.1', port=8080, debug=True)
+	# This is used when running locally. Gunicorn is used to run the
+	# application on Google App Engine. See entrypoint in app.yaml.
+	app.run(host='127.0.0.1', port=8080, debug=True)
