@@ -43,7 +43,7 @@ def author_page(author_name):
 	wikipedia_url = info.first().author_wikipedia_url
 	image_url = info.first().author_image_url
 
-	return render_template('author_template.html', info=info, name=name, birthday=birthday, education=education, nationality=nationality,\
+	return render_template('author_template.html', info=info, author_name=author_name, birthday=birthday, education=education, nationality=nationality,\
 	description=description, alma_mater=alma_mater, wikipedia_url=wikipedia_url, image_url=image_url)
 	# the list of books is passed through info. It needs to be done this way because we must use a loop to create
 	# the table of all books by the author
