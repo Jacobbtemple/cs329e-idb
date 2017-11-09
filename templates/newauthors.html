@@ -38,7 +38,7 @@
         <tr><th>Title</th><th>&nbspBorn&nbsp</th><th>Nationality</th><th>&nbspAlma Mater&nbsp</th><th>Education</th><th>Url</th></tr>
       </thead>
       <tbody>
-        {% for i in books %}
+        {% for i in authors %}
           <tr>
             <td><a href = "/authors/{{i.author_name}}">&nbsp{{i.author_name}}&nbsp</a></td>
             <td>&nbsp{{i.born}}&nbsp</td>
