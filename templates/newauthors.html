@@ -7,11 +7,31 @@
   <!--<link rel="stylesheet" type="text/css" href="static/css/index.css">-->
   <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" -->
       <!-- rel="stylesheet"> -->
-
+      <style>
+        .page-navigation {
+          text-align: center;
+        }
+        .page-navigation a {
+          margin: 0 2px;
+          display: inline-block;
+          padding: 3px 5px;
+          color: #ffffff;
+          background-color: #1E90FF;
+          border-radius: 5px;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        .page-navigation a[data-selected] {
+          background-color: #3d9be0;
+        }
+      </style>
       <link rel="stylesheet" type="text/css" href="../static/css/bootstrap_min.css">
 
       <!-- javascript to sort a table -->
-      <script src="static/js/sorttable.js"></script>
+      <script src='../static/js/sorttable.js'></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script src='../static/js/jquery-paginate.js'></script>
+      <script src='../static/js/jquery-paginate.min.js'></script>
 	</head>
 
 	<body>
@@ -54,6 +74,9 @@
       <!--<tr><td>TOTAL</td><td>£45,000</td></tr-->
       </tfoot>
       </table>
+      <script>
+        $('#myTable').paginate({ limit: 10 });
+      </script>
     {% endif %}
     </div>
   </body>
