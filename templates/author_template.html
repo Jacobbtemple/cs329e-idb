@@ -16,7 +16,7 @@
 
   <body>
   <div class="jumbotron text-center">
-    <h1>{{name}}</h1>
+    <h1>{{author_name}}</h1>
     <div class = "cover"><img src = "{{image_url}}"></div>
   </div>
 
@@ -26,7 +26,7 @@
       <div class = "col">
         <h2>Information: </h2>
         <p><b>Birthday: </b>{{birthday}}</p>
-        <p><b>Name: </b>{{name}}</p>
+        <p><b>Name: </b>{{author_name}}</p>
         <p><b>Education: </b>{{education}}</p>
         <p><b>Nationality: </b>{{nationality}}</p>
         <p><b>About: </b>{{description}}</p>
@@ -54,10 +54,13 @@
           <tr><th>Publishers associated with {{name}}</th></tr>
         </thead>
         <tbody>
+        {% li = [] %}
           {% for i in info %}
-            <tr>
-              <td><a href = "/books/{{i.publisher_name}}">{{i.publisher_name}}</a></td>
-            </tr>
+            {% if i not in li %}
+              {% li.append(i) %}
+              <tr>
+                <td><a href = "/books/{{i.publisher_name}}">{{i.publisher_name}}</a></td>
+              </tr>
           {% endfor %}
         </tbody>
       </div>
