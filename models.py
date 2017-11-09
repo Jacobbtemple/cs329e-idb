@@ -49,7 +49,7 @@ class Book(Base):
 
 
 
-SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:19970131@localhost/mydb')
+SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:mynamejef@localhost/mydb')
 #MESSAGE FROM JEFF: TO RUN LOCALLY, CHANGE POSTGRES->YOUR USERNAME, CHANGE FRAIJ->YOUR PASSWORD, CHANGE BOOKS->YOUR DB NAME
 
 engine = create_engine(SQLALCHEMY_DATABASE_URI)
