@@ -32,9 +32,9 @@ def authors():
 	return render_template('newAuthors.html', authors = authors)
 
 @app.route('/authors/<author_name>')
-def author_page(name):
+def author_page(author_name):
 	# if do not add ".first()" to the end of this, the default data will look like a list of dictionaries
-	info = session.query(Book).filter_by(author_name=name)
+	info = session.query(Book).filter_by(author_name=author_name)
 	birthday = info.first().born
 	education = info.first().education
 	nationality = info.first().nationality
@@ -43,7 +43,7 @@ def author_page(name):
 	wikipedia_url = info.first().author_wikipedia_url
 	image_url = info.first().author_image_url
 
-	return render_template('author_template.html', info=info, name=name, birthday=birthday, education=education, nationality=nationality,\
+	return render_template('author_template.html', info=info, author_name=author_name, birthday=birthday, education=education, nationality=nationality,\
 	description=description, alma_mater=alma_mater, wikipedia_url=wikipedia_url, image_url=image_url)
 	# the list of books is passed through info. It needs to be done this way because we must use a loop to create
 	# the table of all books by the author
@@ -71,6 +71,7 @@ def publisher_page(publisher_name):
 
 	return render_template('publisher_template.html', info=info, publisher_name=publisher_name, owner=owner, publisher_description = publisher_description, \
 	website=website, publisher_image_url=publisher_image_url)
+
 @app.route('/unit_tests')
 def unit_tests():
   output = subprocess.getoutput("python test.py")
