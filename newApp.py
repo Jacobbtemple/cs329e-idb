@@ -31,7 +31,7 @@ def authors():
 	authors = session.query(Book).distinct(Book.author_name)
 	return render_template('newauthors.html', authors = authors)
 
-@app.route('/authors/<name>')
+@app.route('/authors/<author_name>')
 def author_page(name):
 	# if do not add ".first()" to the end of this, the default data will look like a list of dictionaries
 	info = session.query(Book).filter_by(author_name=name)
