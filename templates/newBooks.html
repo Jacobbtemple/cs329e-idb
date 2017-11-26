@@ -39,12 +39,6 @@
       <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
       <link href="static/css/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-      <!-- javascript to sort a table -->
-      <script src='../static/js/sorttable.js'></script>
-      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-      <script src='../static/js/jquery-paginate.js'></script>
-      <script src='../static/js/jquery-paginate.min.js'></script>
-
       <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
       <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
 
@@ -101,6 +95,11 @@
         <tr><th>Title</th><th>&nbspGoogle ID&nbsp</th><th>ISBN</th><th>&nbspPublication Date&nbsp</th><th>Author</th><th>Publisher</th></tr>
       </thead>
       <tbody>
+        <script>
+          $(document).ready( function () {
+              $('#myTable').DataTable();
+          } );
+        </script>
         {% for i in books %}
           <tr>
             <td><a href = "/books/{{i.title}}">&nbsp{{i.title}}&nbsp</a></td>
@@ -117,11 +116,6 @@
       <!--<tr><td>TOTAL</td><td>£45,000</td></tr-->
       </tfoot>
       </table>
-      <script>
-        $(document).ready( function () {
-            $('#myTable').DataTable();
-        } );
-      </script>
     {% endif %}
     </div>
   </body>
