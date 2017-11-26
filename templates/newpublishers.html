@@ -39,11 +39,9 @@
       <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
       <link href="static/css/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-      <!-- javascript to sort a table -->
-      <script src='../static/js/sorttable.js'></script>
-      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-      <script src='../static/js/jquery-paginate.js'></script>
-      <script src='../static/js/jquery-paginate.min.js'></script>
+      <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+      <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+
 	</head>
 
 	<body>
@@ -98,6 +96,11 @@
         <tr><th>Name</th><th>&nbspowner&nbsp</th><th>website</th><th>&nbspwikipedia page&nbsp</th><th>description</th></tr>
       </thead>
       <tbody>
+        <script>
+          $(document).ready( function () {
+              $('#myTable').DataTable();
+          } );
+        </script>
         {% for i in publishers %}
           <tr>
             <td><a href = "/publishers/{{i.publisher_name}}">&nbsp{{i.publisher_name}}&nbsp</a></td>
