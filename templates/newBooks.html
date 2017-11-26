@@ -24,6 +24,7 @@
           background-color: #3d9be0;
         }
       </style>
+
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,7 +44,11 @@
       <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
       <script src='../static/js/jquery-paginate.js'></script>
       <script src='../static/js/jquery-paginate.min.js'></script>
-	</head>
+
+      <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+      <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+
+  </head>
 
 	<body>
 
@@ -113,7 +118,9 @@
       </tfoot>
       </table>
       <script>
-        $('#myTable').paginate({ limit: 10 });
+        $(document).ready( function () {
+            $('#myTable').DataTable();
+        } );
       </script>
     {% endif %}
     </div>
