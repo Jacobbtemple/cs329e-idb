@@ -3,7 +3,6 @@
 
 <html>
 	<head>
-		<title>Books</title>
   <!--<link rel="stylesheet" type="text/css" href="static/css/index.css">-->
   <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" -->
       <!-- rel="stylesheet"> -->
@@ -25,7 +24,19 @@
           background-color: #3d9be0;
         }
       </style>
-      <link rel="stylesheet" type="text/css" href="../static/css/bootstrap_min.css">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>BOOKS</title>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+      <!-- -->
+      <link href="static/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="static/Bootstrap/css/custom.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+      <link href="static/css/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
       <!-- javascript to sort a table -->
       <script src='../static/js/sorttable.js'></script>
@@ -36,14 +47,42 @@
 
 	<body>
 
+    <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" style="color:#fff" href={{ url_for('splash') }}>BOOKHUB</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a style="color:#fff" href=/about>ABOUT</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#fff" role="button" aria-haspopup="true" aria-expanded="false">PILLARS<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href={{ url_for('books') }}>BOOKS</a></li>
+              <li><a href={{ url_for('publishers') }}>PUBLISHERS</a></li>
+              <li><a href={{ url_for('authors') }}>AUTHORS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
     <div id="title" class="text-center title" style="color:DodgerBlue">
       <br>
-      <h1 class="text-center">List of Books</h1>
+      <h1 class="text-center" style="font-family: 'Montserrat';">List of Books</h1>
     </div>
 		<hr/>
 
     <div class="text-center">
-      <button class="btn-default"><a href={{ url_for('splash') }}>Go Back to Splash</a><br/></button>
+      <button type="button" class="btn btn-secondary"><a href={{ url_for('splash') }}>Go Back to Splash</a><br/></button>
     </div>
 
 
