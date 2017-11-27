@@ -11,6 +11,7 @@ DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
 class DBTestCases(unittest.TestCase):
+
 	def test_source_insert_1(self):
 
 		s1 = Test(title='mybook1', isbn = 'isbn1')
@@ -42,6 +43,17 @@ class DBTestCases(unittest.TestCase):
 		self.assertEqual(str(r3.publisher_name), 'publisher3')
 
 		session.query(Test).filter_by(title='mybook3').delete()
+		session.commit()
+
+
+	def test_source_insert_4(self):
+		s4 = Test(title='mybook4', publisher_name = 'publisher4')
+		session.add(s4)
+
+		r4 = session.query(Test).filter_by(title='mybook4').one()
+		self.assertEqual(str(r4.publisher_name), 'publisher4')
+
+		session.query(Test).filter_by(title='mybook4').delete()
 		session.commit()
 
 if __name__ == '__main__':
