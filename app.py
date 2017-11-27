@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, url_for
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-#from models import Base, Book, engine
+from models import Base, Book, engine
 from create_db import create_book, session
 import subprocess
 import json
