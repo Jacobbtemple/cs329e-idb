@@ -79,7 +79,7 @@
       <br>
       <h1 class="text-center" style="font-family: 'Montserrat';">List of Publishers</h1>
     </div>
-		<hr/>
+		<br>
 
     <div class="text-center">
       <button type="button" class="btn btn-secondary"><a href={{ url_for('splash') }}>Go Back to Splash</a><br/></button>
@@ -93,7 +93,7 @@
     {% else %}
       <table id="myTable" cellpadding="5px" class="sortable table-bordered text-center" style="margin: auto; style">
 		  <thead>
-        <tr><th>Name</th><th>&nbspowner&nbsp</th><th>website</th><th>&nbspwikipedia page&nbsp</th><th>description</th></tr>
+        <tr><th>Name</th><th>&nbspOwner&nbsp</th><th>Website</th><th>&nbspWikipedia Page&nbsp</th><th>Description</th></tr>
       </thead>
       <tbody>
         <script>
@@ -117,10 +117,9 @@
       <!--<tr><td>TOTAL</td><td>£45,000</td></tr-->
       </tfoot>
       </table>
-      <script>
-        $('#myTable').paginate({ limit: 10 });
-      </script>
     {% endif %}
     </div>
+    <br>
+    <br>
   </body>
 </html>
